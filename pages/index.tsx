@@ -45,15 +45,15 @@ const HomePage: React.FunctionComponent<HomePageProps> = ({ posts, jobs, papers,
                 <meta name="description"
                       content="Allegro Tech to miejsce, w którym nasi inżynierowie dzielą się wiedzą oraz case study z wybranych projektów w firmie - w formie artykułów, podcastów oraz eventów."/>
                 <title>Allegro ML Research</title>
-                <meta property="og:site_name" content="allegro.tech"/>
-                <meta property="og:title" content="allegro.tech"/>
-                <meta property="og:url" content="https://allegro.tech"/>
+                <meta property="og:site_name" content="Allegro ML research"/>
+                <meta property="og:title" content="Allegro ML research"/>
+                <meta property="og:url" content="https://ml.allegro.tech"/>
                 <meta property="og:type" content="site"/>
-                <meta property="og:image" content="https://allegro.tech/images/allegro-tech.png"/>
+                <meta property="og:image" content="https://ml.allegro.tech/images/allegro-ml-research.svg"/>
                 <link rel="shortcut icon" href="favicon.ico"/>
-                <link rel="canonical" href="https://allegro.tech" itemProp="url"/>
+                <link rel="canonical" href="https://ml.allegro.tech" itemProp="url"/>
                 <link rel="preload" href="images/splash.jpg" as="image" />
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-1M1FJ5PXWW"></script>
+                {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-1M1FJ5PXWW"></script>
                 <script dangerouslySetInnerHTML={{
                     __html: `
                     window.dataLayer = window.dataLayer || [];
@@ -62,7 +62,7 @@ const HomePage: React.FunctionComponent<HomePageProps> = ({ posts, jobs, papers,
                     gtag('config', 'G-1M1FJ5PXWW');
                 `
                 }}>
-                </script>
+                </script> */}
             </Head>
             <Header/>
             <Container className="m-padding-top-24">
@@ -76,7 +76,7 @@ const HomePage: React.FunctionComponent<HomePageProps> = ({ posts, jobs, papers,
                     ))}
                 </Grid>
             </Container>
-            <Container className="m-padding-top-24">
+            {/* <Container className="m-padding-top-24">
                 <Heading size="xlarge" className="m-padding-left-24 m-padding-right-24">Blog</Heading>
                 <Grid>
                     {posts.map(post => (
@@ -92,7 +92,7 @@ const HomePage: React.FunctionComponent<HomePageProps> = ({ posts, jobs, papers,
                     href="https://blog.allegro.tech">
                     Zobacz więcej wpisów
                 </Link>
-            </Container>
+            </Container> */}
             <Container className="m-padding-top-24">
                 <Heading size="xlarge" id="presentations" className="m-padding-left-24 m-padding-right-24">Talks</Heading>
                 <Grid>
@@ -109,12 +109,12 @@ const HomePage: React.FunctionComponent<HomePageProps> = ({ posts, jobs, papers,
                         </Grid.Col>
                     ))}
                 </Grid>
-                <Link
+                {/* <Link
                     button
                     className="m-display_block m-margin-bottom_8 m-width_100"
                     href="">
                     See more videos
-                </Link>
+                </Link> */}
             </Container>
             <Container className="m-padding-top-24">
                 <Heading size="xlarge" id="open-source" className="m-padding-left-24 m-padding-right-24">Open-Source</Heading>
@@ -133,22 +133,6 @@ const HomePage: React.FunctionComponent<HomePageProps> = ({ posts, jobs, papers,
                     See more videos
                 </Link> */}
             </Container>
-            {/* <Container className="m-padding-top-24">
-                <a name="publications"/>
-                <Heading size="xlarge" className="m-padding-left-24 m-padding-right-24">Publications</Heading>
-                <Grid>
-                    {papers.map(event => (
-                        <Grid.Col key={event.id} size={12} smSize={6} xlSize={6}
-                                  className="m-display-flex m-flex-direction_column">
-                            <Event {...event}/>
-                        </Grid.Col>
-                    ))}
-                </Grid>
-                <Link
-                    button
-                    className="m-display_block m-margin-bottom_8 m-width_100"
-                    href="https://www.meetup.com/allegrotech/events/">More of what we've published</Link>
-            </Container> */}
             <Container className="m-padding-top-24">
                 <Heading size="xlarge" id="publications" className="m-padding-left-24 m-padding-right-24">Publications</Heading>
                 <Container>
@@ -198,7 +182,7 @@ export async function getStaticProps() {
         props: {
             posts: addThumbnails(posts).items.slice(0, 4),
             jobs: jobs.slice(0, 5),
-            papers: ppapers.slice(0, 4),
+            papers: ppapers.slice(0, 10),
             videos: videos.slice(0, 4),
             videos2: videos.slice(4, 8),
             open_source: os_projects.slice(0, 4),

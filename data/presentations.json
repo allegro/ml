@@ -43,18 +43,123 @@
             "thumb": "images/video-headers/przemoc_many_shades.png"
         },
         {
-            "title": "Batch construction strategies in deep metric learning",
-            "url": "https://www.youtube.com/watch?v=wsBLHArYFtM",
-            "who": "Bartosz Ludwiczuk & Kalina Kobus",
-            "description": "Presentation at https://ghostday.pl/index.php/speakers/#talk-615",
-            "thumb": "images/video-headers/kalina_batch_const.png"
+            "title": "Machine learning i przyszłość algorytmów",
+            "url": "https://www.youtube.com/watch?v=UT3bGUEY-8o",
+            "who": "Ireneusz Gawlik",
+            "description": "Presentation at [Copernicus Festival](https://copernicusfestival.com/event/machine-learning-i-przyszlosc-algorytmow-czy-sztuczna-inteligencja-moze-zrozumiec-zachowania-konsumentow/)",
+            "thumb": "images/video-headers/irek.gawlik_copernicus.png"
         },
         {
-            "title": "(Many shades of) ML @ Allegro.pl: NLP, Vision & ranking at the largest Polish e-commerce marketplace",
-            "url": "https://www.youtube.com/watch?v=hXGSxTNVmwg",
+            "title": "Badania i rozwój ML w Allegro",
+            "url": "https://allegro.tech/podcast/badania_i_rozwoj_ml_w_allegro/",
+            "who": "Ireneusz Gawlik",
+            "description": "Allegro.tech podcast",
+            "thumb": "images/video-headers/irek.gawlik_podcast.png"
+        },
+        {
+            "title": "Przegląd modeli opartych o architekturę BERT dla języka polskiego",
+            "url": "https://www.youtube.com/watch?v=LkR-i2Z1RwM",
+            "who": "Piotr Rybak",
+            "description": "Seminar at http://zil.ipipan.waw.pl/seminarium",
+            "thumb": ""
+        },
+        {
+            "title": "O KONKURSACH W DATA SCIENCE (POLEVAL I KLEJ BENCHMARK)",
+            "url": "https://stacja.it/podcast/2020-07-09-piotr-rybak-i-lukasz-kobylinski-o-konkursach-w-data-science-poleval-i-klej-benchmark.html",
+            "who": "Piotr Rybak",
+            "description": "Podcast at Stacja.IT",
+            "thumb": ""
+        },
+        {
+            "title": "Can we improve a Visual Search model, if we don’t know if it actually works?",
+            "url": "https://www.facebook.com/848329198535765/videos/938063859999910/",
+            "who": "Marcin Tuszyński",
+            "description": "",
+            "thumb": ""
+        },
+        {
+            "title": "What Sesame Street has in common with NLP?",
+            "url": "https://www.facebook.com/848329198535765/videos/938063859999910/",
+            "who": "Piotr Rybak",
+            "description": "",
+            "thumb": ""
+        },
+        {
+            "title": "KLEJ Benchmark",
+            "url": "https://www.youtube.com/watch?v=PyLRJwJFlBQ",
+            "who": "Piotr Rybak",
+            "description": "Presentation at [PL NLP Meetup](https://www.meetup.com/pl-PL/Polish-Natural-Language-Processing-Meetup-Group/events/270336612/)",
+            "thumb": ""
+        },
+        {
+            "title": "Many shades of ML @ allegro.pl",
+            "url": "https://www.youtube.com/watch?v=4Fq_PbvEBDE",
             "who": "Przemysław Pobrotyn",
-            "description": "Presentation at https://ghostday.pl/index.php/speakers/#talk-706",
-            "thumb": "images/video-headers/przemoc_many_shades.png"
+            "description": "",
+            "thumb": ""
+        },
+        {
+            "title": "Learning to rank - teoria i praktyka na przykładzie allegro.pl",
+            "url": "https://www.youtube.com/watch?v=xrbFMZQSrAQ&t=2495s",
+            "who": "Przemysław Pobrotyn",
+            "description": "",
+            "thumb": ""
+        },
+        {
+            "title": "KLEJ: Comprehensive Benchmark for Polish Language Understanding",
+            "url": "https://slideslive.com/38929260/klej-comprehensive-benchmark-for-polish-language-understanding",
+            "who": "Piotr Rybak",
+            "description": "ACL presentation [link](https://www.aclweb.org/anthology/2020.acl-main.111/)",
+            "thumb": ""
+        },
+        {
+            "title": "Visual Search",
+            "url": "https://www.youtube.com/watch?v=j7DTZDIOCTg",
+            "who": "Jarosław Bojar, Marcin Tuszyński",
+            "description": "",
+            "thumb": ""
+        },
+        {
+            "title": "Similarity learning for zero-shot product matching",
+            "url": "https://www.youtube.com/watch?v=5_P5rbsLW50",
+            "who": "Kalina Kobus, Piotr Wójcik",
+            "description": "",
+            "thumb": ""
+        },
+        {
+            "title": "How to find that red dress? - Visual Search in Allegro",
+            "url": "",
+            "who": "Piotr Rybak",
+            "description": "https://ghostday.pl/index.php/19-edition-speakers/",
+            "thumb": ""
+        },
+        {
+            "title": "Visual Search @ allegro.pl",
+            "url": "https://www.youtube.com/watch?v=89tVbSIqwFA",
+            "who": "Marcin Tuszyński",
+            "description": "",
+            "thumb": ""
+        },
+        {
+            "title": "Learning to rank with the Transformer",
+            "url": "https://www.youtube.com/watch?v=44vX7QDD3VQ",
+            "who": "Tomasz Bartczak & Radosław Białobrzeski",
+            "description": "",
+            "thumb": ""
+        },
+        {
+            "title": "Learning to rank at scale",
+            "url": "https://www.youtube.com/watch?v=woI8YASZV9U",
+            "who": "Ireneusz Gawlik & Tomasz Bartczak",
+            "description": "",
+            "thumb": ""
+        },
+        {
+            "title": "Learning to rank @ allegro.pl",
+            "url": "https://www.youtube.com/watch?v=O7v9u_gSy7Y",
+            "who": "Ireneusz Gawlik & Tomasz Bartczak",
+            "description": "",
+            "thumb": ""
         }
     ]
 }

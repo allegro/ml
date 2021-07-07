@@ -15,4 +15,5 @@ const Link: React.FunctionComponent<LinkProps> = ({ className, children, signal 
     "m-height_40 m-line-height_40 m-text-transform_uppercase m-letter-spacing_2 m-white-space_nowrap m-cursor_pointer m-overflow_hidden m-padding-left_16 m-padding-right_16 m-padding-top_0 m-padding-bottom_0 m-outline-style_dotted--focus m-outline-width_2 m-outline-color_teal m-outline-offset_n2 m-button m-box_border m-text-align_center m-display_inline-block m-color_secondary m-background-position_50p m-background-size_5000p m-transition-property_background-color m-transition-duration_fast m-button--secondary": button
 })} {...props}>{children}</a>
 
+
 export default Link;
