@@ -1,0 +1,34 @@
+{
+    "teams": [
+        {
+            "name": "CX Robots",
+            "icon": "FaRobot",
+            "description": "We focus on using NLP models to understand and automate the communication at Allegro, e.g. automatically answer questions asked to our customer support. Our main research directions are related to pretraining and evaluating large language models, semi-supervised clustering, and human-in-the-loop NLP."
+        },
+        {
+            "name": "Learning to Rank",
+            "icon": "FaList",
+            "description": "In Learning to Rank, our goal is to develop ranking models which find the optimal ordering of items for a given search results list, based on past users’ interactions. Such models constitute the final stage of Allegro’s search engine, serving millions of searches a day.\n\nSome of the research problems we tackle are:\n1. Incorporation of multimodal data (textual, visual, tabular) into an end-to-end ranking model.\n1. Search engine personalization\n1. Developing novel ranking architectures and loss functions"
+        },
+        {
+            "name": "Visual Search",
+            "icon": "FaImages",
+            "description": "In Visual Search, we create machine learning models which enable us to create image embeddings suitable for similarity search. The main challenge is to make these embeddings sensitive to relevant visual traits of products like category, style, colour, pattern etc. while maintaining insensitivity to irrelevant information such as background, presence of a model, different camera angles etc."
+        },
+        {
+            "name": "PCS Automation",
+            "icon": "FaShoppingBag",
+            "description": "We employ a diverse set of machine learning techniques to improve the product-based experience on Allegro. Problems that we solve include, e.g., product matching i.e., being able to infer the product being sold for a merchant-created offer, or automatic integration of product definitions from external product catalogs. Examples of our research directions include sampling methods in similarity learning or extreme classification methods."
+        },
+        {
+            "name": "Recommendations",
+            "icon": "FaSitemap",
+            "description": "The main purpose of our team is to address users’ needs, show them a broad range of products they would be interested in - thus serving as an inspiration and connecting them with useful, contextual offers.\nWe ground our algorithms on previous collective behaviors of our user-base. But we also work towards incorporating content features of the items into the models. Our main challenges include building novel algorithms that can give good recommendations for our users and also operate at scale. Both being a significant endeavour, considering the sheer amount of traffic Allegro serves daily.\n\nWe focus our research on:\n1. Building item representation, that can serve as retrieval basis,\n1. Improving ways to detect user intents in clear (and useful) way,\n1. Current trends in recommender systems."
+        },
+        {
+            "name": "SEM",
+            "icon": "FaSignal",
+            "description": "We aim to enhance various Allegro projects with exploratory algorithms, which are capable to not only exploit historical data but explore via interactions with the world. Currently, we are working on the optimization of Search Engine Marketing (SEM) and Content Optimization projects. Our main research directions include contextual bandits, A/B testing alternatives with casual impact discovery and offline RL. "
+        }
+    ]
+}

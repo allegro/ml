@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Open+Sans:300,400,600,700&subset=latin,latin-ext&display=swap');
+@import 'metrum.scss';
+
+body {
+  margin: 0;
+  padding: 81px 0 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #eceff1;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+  }
+}
+
+:root {
+  --m-color-link: #3bbdc4;
+  --m-color-link-visited: #3bbdc4;
+  --m-color-link-hover: #3bbdc4;
+}

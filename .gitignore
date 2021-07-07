@@ -1,0 +1,14 @@
+### Component generated files ###
+node_modules/
+*.log
+*-tests.xml
+dist/
+screenshots/
+.tmp/
+*.css.d.ts
+.nyc_output
+coverage
+.lighthouseci
+
+### Custom ignored files ###
+.next

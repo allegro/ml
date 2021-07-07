@@ -1,0 +1,60 @@
+{
+    "videos": [
+        {
+            "title": "Polacy nie gęsi, iż swojego BERTa mają",
+            "url": "https://vimeo.com/471413175",
+            "who": "Piotr Rybak",
+            "description": "An introduction to our HerBERT model. Presentation at https://www.nlpday.pl/",
+            "thumb": "images/video-headers/polacy_nie_gesi.png"
+        },
+        {
+            "title": "Jak skutecznie zarządzać projektami uczenia maszynowego?",
+            "url": "https://www.youtube.com/watch?v=gWDSdJfP7gU",
+            "who": "Ireneusz Gawlik",
+            "description": "Presentation at https://ghostday.pl/",
+            "thumb": "images/video-headers/irek_gawlik_mgmt.png"
+        },
+        {
+            "title": "What does the user ask for? - Discovering new intents in conversational data",
+            "url": "https://www.youtube.com/watch?v=vSSZ3ANyVb0",
+            "who": "Piotr Rybak",
+            "description": "Presentation at https://ghostday.pl/index.php/speakers/#talk-613",
+            "thumb": "images/video-headers/p.rybak_intencje.png"
+        },
+        {
+            "title": "Challenges of commercializing language models on mobile devices",
+            "url": "https://www.youtube.com/watch?v=tC3yNlPg_Bw",
+            "who": "Szymon Łęski",
+            "description": "Presentation at https://ghostday.pl/index.php/speakers/#talk-664",
+            "thumb": "images/video-headers/sz.lecki_prod.png"
+        },
+        {
+            "title": "Batch construction strategies in deep metric learning",
+            "url": "https://www.youtube.com/watch?v=wsBLHArYFtM",
+            "who": "Bartosz Ludwiczuk & Kalina Kobus",
+            "description": "Presentation at https://ghostday.pl/index.php/speakers/#talk-615",
+            "thumb": "images/video-headers/kalina_batch_const.png"
+        },
+        {
+            "title": "(Many shades of) ML @ Allegro.pl: NLP, Vision & ranking at the largest Polish e-commerce marketplace",
+            "url": "https://www.youtube.com/watch?v=hXGSxTNVmwg",
+            "who": "Przemysław Pobrotyn",
+            "description": "Presentation at https://ghostday.pl/index.php/speakers/#talk-706",
+            "thumb": "images/video-headers/przemoc_many_shades.png"
+        },
+        {
+            "title": "Batch construction strategies in deep metric learning",
+            "url": "https://www.youtube.com/watch?v=wsBLHArYFtM",
+            "who": "Bartosz Ludwiczuk & Kalina Kobus",
+            "description": "Presentation at https://ghostday.pl/index.php/speakers/#talk-615",
+            "thumb": "images/video-headers/kalina_batch_const.png"
+        },
+        {
+            "title": "(Many shades of) ML @ Allegro.pl: NLP, Vision & ranking at the largest Polish e-commerce marketplace",
+            "url": "https://www.youtube.com/watch?v=hXGSxTNVmwg",
+            "who": "Przemysław Pobrotyn",
+            "description": "Presentation at https://ghostday.pl/index.php/speakers/#talk-706",
+            "thumb": "images/video-headers/przemoc_many_shades.png"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "publications": [
+        {
+            "authors": "Robert Mroczkowski, Piotr Rybak, Alina Wróblewska, Ireneusz Gawlik",
+            "date": "2021",
+            "paper_url": "https://www.aclweb.org/anthology/2021.bsnlp-1.1/",
+            "accepted_at": "BSNLP, accepted long paper",
+            "paper_title": "HerBERT: Efficiently Pretrained Transformer-based Language Model for Polish"
+        },
+        {
+            "authors": "Piotr Rybak, Robert Mroczkowski, Janusz Tracz, Ireneusz Gawlik",
+            "date": "2020",
+            "paper_url": "https://www.aclweb.org/anthology/2020.acl-main.111/",
+            "accepted_at": "ACL 2020, accepted long paper",
+            "paper_title": "KLEJ: Comprehensive Benchmark for Polish Language Understanding"
+        },
+        {
+            "authors": "Przemysław Pobrotyn, Tomasz Bartczak, Mikołaj Synowiec, Radosław Białobrzeski, Jarosław Bojar",
+            "date": "2020",
+            "paper_url": "https://arxiv.org/abs/2005.10084",
+            "accepted_at": "SIGIR eCommerce Workshop 2020, contributed talk",
+            "paper_title": "Context-Aware Learning to Rank with Self-Attention"
+        },
+        {
+            "authors": "Przemysław Pobrotyn, Radosław Białobrzeski",
+            "date": "2020",
+            "paper_url": "https://arxiv.org/abs/2102.07831",
+            "accepted_at": "The 2021 SIGIR Workshop On eCommerce (SIGIR eCom ’21)",
+            "paper_title": "NeuralNDCG: Direct Optimisation of a Ranking Metric via Differentiable Relaxation of Sorting"
+        },
+        {
+            "authors": "Janusz Tracz, Piotr Wójcik, Kalina Jasinska-Kobus, Riccardo Belluzzo, Robert Mroczkowski, Ireneusz Gawlik",
+            "date": "2020",
+            "paper_url": "https://www.aclweb.org/anthology/2020.ecomnlp-1.7/",
+            "accepted_at": "EComNLP 2020 COLING Workshop on Natural Language Processing in E-Commerce",
+            "paper_title": "BERT-based similarity learning for product matching"
+        }
+    ]
+}

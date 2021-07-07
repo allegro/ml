@@ -1,0 +1,20 @@
+{
+    "projects": [
+        {
+            "name": "allRank",
+            "url": "https://github.com/allegro/allRank",
+            "description": "framework for training neural Learning-to-Rank (LTR) models,\nfeaturing implementations of:\n*  common pointwise, pairwise and listwise loss function,\n* fully connected and Transformer-like scoring function,\n* commonly used evaluation metrics like Normalized Discounted Cumulative Gain (NDCG) and Mean Reciprocal Rank (MRR},\n* click-models for experiments on simulated click-through data"
+        },
+        {
+            "name": "KLEJ Benchmark",
+            "url": "https://klejbenchmark.com/",
+            "icon": "FaTint",
+            "description": "The KLEJ benchmark (Kompleksowa Lista Ewaluacji Językowych) is a set of nine evaluation tasks for the Polish language understanding. Key benchmark features:\n* It contains a diverse set of tasks from different domains and with different objectives,\n* Most tasks are created from existing datasets but we also release the new sentiment analysis dataset from an e-commerce domain."
+        },
+        {
+            "name": "HerBERT",
+            "url": "https://huggingface.co/allegro",
+            "description": "HerBERT is a BERT-based language model trained on six different corpora for Polish language understanding. It achieves state-of-the-art results on multiple downstream tasks, including [KLEJ Benchmark](https://klejbenchmark.com/) and Part-of-Speech tagging. We release both Base and Large variants of the model as a part of [transformers](https://github.com/huggingface/transformers) library for anyone to use."
+        }
+    ]
+}
