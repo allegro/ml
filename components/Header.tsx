@@ -12,9 +12,9 @@ import { Scrollchor } from 'react-scrollchor';
 const MENU_ITEMS = [
     { label: 'Blog', url: 'https://blog.allegro.tech' },
     { label: 'Our projects', url: '#teams' },
+    { label: 'Talks', url: '#presentations' },
     { label: 'Open Source', url: '#open-source' },
     { label: 'Publications', url: '#publications' },
-    { label: 'Talks', url: '#presentations' },
     { label: 'Jobs', url: 'https://praca.allegro.pl' }
 
 ];
@@ -43,13 +43,13 @@ const Header = () => {
                             {MENU_ITEMS.map(({ label, url }) => {
                                 if (url.startsWith("http")) {
                                     return (
-                                        <List.Item key={label} className="m-margin-left-16@lg"><Link href={url} signal
+                                        <List.Item key={label} className="m-margin-left-16@lg"><Link href={url} target="_blank" signal
                                         className="m-display-block m-display-inline@lg m-padding-left-16 m-padding-right-16 m-padding-top-16 m-padding-bottom-16 m-padding-left-0@lg m-padding-top-0@lg m-padding-right-0@lg m-padding-bottom-0@lg">{label}</Link></List.Item>  
                                     )
                                 } else {
                                  return (
-                                <List.Item key={label} className="m-margin-left-16@lg"><Scrollchor to={url} 
-                                                                                             className="m-display-block m-display-inline@lg m-padding-left-16 m-padding-right-16 m-padding-top-16 m-padding-bottom-16 m-padding-left-0@lg m-padding-top-0@lg m-padding-right-0@lg m-padding-bottom-0@lg">{label}</Scrollchor></List.Item>
+                                <List.Item key={label} className="m-margin-left-16@lg"><Scrollchor to={url}
+                                        className="m-display-block m-display-inline@lg m-padding-left-16 m-padding-right-16 m-padding-top-16 m-padding-bottom-16 m-padding-left-0@lg m-padding-top-0@lg m-padding-right-0@lg m-padding-bottom-0@lg m-white-space_nowrap m-cursor_pointer m-overflow_hidden  m-padding-top_0 m-padding-bottom_0 m-outline-style_dotted--focus m-outline-width_2 m-outline-color_teal m-outline-offset_n2 m-button m-box_border m-text-align_center m-display_inline-block m-link--signal">{label}</Scrollchor></List.Item>
                                 )}
                                 }
                             )}
