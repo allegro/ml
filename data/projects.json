@@ -26,7 +26,7 @@
             "description": "The main purpose of our team is to address users’ needs, show them a broad range of products they would be interested in - thus serving as an inspiration and connecting them with useful, contextual offers.\nWe ground our algorithms on previous collective behaviors of our user-base. But we also work towards incorporating content features of the items into the models. Our main challenges include building novel algorithms that can give good recommendations for our users and also operate at scale. Both being a significant endeavour, considering the sheer amount of traffic Allegro serves daily.\n\nWe focus our research on:\n1. Building item representation, that can serve as retrieval basis,\n1. Improving ways to detect user intents in clear (and useful) way,\n1. Current trends in recommender systems."
         },
         {
-            "name": "SEM",
+            "name": "Reinforcement Learning",
             "icon": "FaSignal",
             "description": "We aim to enhance various Allegro projects with exploratory algorithms, which are capable to not only exploit historical data but explore via interactions with the world. Currently, we are working on the optimization of Search Engine Marketing (SEM) and Content Optimization projects. Our main research directions include contextual bandits, A/B testing alternatives with casual impact discovery and offline RL. "
         }

@@ -10,7 +10,7 @@ import List from "../metrum/List";
 import { Scrollchor } from 'react-scrollchor';
 
 const MENU_ITEMS = [
-    { label: 'Blog', url: 'https://blog.allegro.tech' },
+    // { label: 'Blog', url: 'https://blog.allegro.tech' },
     { label: 'Our projects', url: '#teams' },
     { label: 'Talks', url: '#presentations' },
     { label: 'Open Source', url: '#open-source' },
@@ -65,14 +65,12 @@ const Header = () => {
                 </Container>
             </Card>
             <div className={styles.hero}>
-                <Container className={classnames("m-display-flex m-flex-column m-flex-justify-end", styles.image)}>
-                    <Card className="m-color-bg_desk m-color-bg_card" transparent>
+                <Container className={classnames("m-display-flex m-flex-column m-flex-justify-end m-padding-bottom_24 ", styles.image)}>
+                    <Card className="m-color-bg_desk m-color-bg_card m-width-max_768" transparent>
                         <Heading size="hero">About us</Heading>
                         <Typography>
                         Machine Learning Research is Allegro’s R&D lab created to develop and apply state-of-the-art machine learning methods, helping Allegro grow and innovate with artificial intelligence. Beyond bringing AI to
-production, we are committed to advance the understanding of machine learning through open collaboration with the scientific community. Machine Learning Research is Allegro’s R&D lab created to develop and
-apply state-of-the-art machine learning methods, helping Allegro grow and innovate with artificial intelligence. Beyond bringing AI to production, we are committed to advance the understanding of machine
-learning through open collaboration with the scientific community.</Typography>
+production, we are committed to advance the understanding of machine learning through open collaboration with the scientific community. </Typography>
                     </Card>
                 </Container>
             </div>
