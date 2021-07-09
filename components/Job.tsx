@@ -23,7 +23,7 @@ const Job: React.FunctionComponent<JobProps> = ({ id, name, location }) => {
             <Heading size="medium" className="m-margin-bottom_0_sm m-flex-grow_1">{name}</Heading>
             <Typography
                 className="m-margin-right_0 m-margin-bottom_0 m-margin-left_0 m-color_text m-font-size_21 m-font-size_25_sm m-font-weight_300 m-line-height_normal m-margin-top_16 m-text-align_left m-padding-right_16">{location.city}</Typography>
-            <Link button href={link}>Sprawdź</Link>
+            <Link button href={link}>Apply</Link>
         </Card>
     );
 };
