@@ -167,7 +167,7 @@ export async function getStaticProps() {
     type CustomItem = { authors: IAuthor[] };
     const parser: Parser<any, CustomItem> = new Parser({ customFields: { item: ['authors'] } });
     const postsPromise = parser.parseURL('https://blog.allegro.tech/feed.xml');
-    const jobsPromise = fetch('https://api.smartrecruiters.com/v1/companies/allegro/postings?custom_field.58c15608e4b01d4b19ddf790=c807eec2-8a53-4b55-b7c5-c03180f2059b')
+    const jobsPromise = fetch('https://api.smartrecruiters.com/v1/companies/allegro/postings?department=2572821&custom_field.58c15608e4b01d4b19ddf790=c807eec2-8a53-4b55-b7c5-c03180f2059b')
         .then(response => response.json())
         .then(json => json.content);
 
