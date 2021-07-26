@@ -43,7 +43,8 @@ const HomePage: React.FunctionComponent<HomePageProps> = ({ posts, jobs, papers,
             <Head>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
                 <meta name="description"
-                      content="Allegro Tech to miejsce, w którym nasi inżynierowie dzielą się wiedzą oraz case study z wybranych projektów w firmie - w formie artykułów, podcastów oraz eventów."/>
+                      content="Machine Learning Research is Allegro’s R&D lab created to develop and apply state-of-the-art machine learning methods, helping Allegro grow and innovate with artificial intelligence. Beyond bringing AI to
+                      production, we are committed to advance the understanding of machine learning through open collaboration with the scientific community."/>
                 <title>Allegro ML Research</title>
                 <meta property="og:site_name" content="Allegro ML research"/>
                 <meta property="og:title" content="Allegro ML research"/>
