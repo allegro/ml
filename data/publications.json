@@ -1,6 +1,13 @@
 {
     "publications": [
         {
+            "authors": "Konrad Czechowski, Tomasz Odrzygóźdź, Marek Zbysiński, Michał Zawalski, Krzysztof Olejnik, Yuhuai Wu, Łukasz Kuciński, Piotr Miłoś",
+            "date": "2021",
+            "paper_url": "https://arxiv.org/abs/2108.11204",
+            "accepted_at": "Conference and Workshop on Neural Information Processing Systems (NeurIPS)",
+            "paper_title": "Subgoal Search For Complex Reasoning Tasks"
+        },
+        {
             "authors": "Robert Mroczkowski, Piotr Rybak, Alina Wróblewska, Ireneusz Gawlik",
             "date": "2021",
             "paper_url": "https://www.aclweb.org/anthology/2021.bsnlp-1.1/",
