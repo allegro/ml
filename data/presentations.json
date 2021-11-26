@@ -1,6 +1,20 @@
 {
     "videos": [
         {
+            "title": "How to translate Allegro into foreign languages",
+            "url": "https://www.youtube.com/watch?v=6KDU5TZohpM&list=PLzveSKBX_3N7yPb4ErB5HJ83eB6XvH37C&index=27",
+            "who": "Karol Grzegorczyk",
+            "description": "ATM 2021 public track presentation",
+            "thumb": "images/video-headers/karol-atm.png"
+        },
+        {
+            "title": "“Do you speak Allegro?” Large Scale Language Modeling",
+            "url": "https://www.youtube.com/watch?v=6T-R4kgIbBs&list=PLzveSKBX_3N7yPb4ErB5HJ83eB6XvH37C&index=19",
+            "who": "Riccardo Belluzzo",
+            "description": "ATM 2021 public track presentation",
+            "thumb": "images/video-headers/riccardo-atm.png"
+        },
+        {
             "title": "Polacy nie gęsi, iż swojego BERTa mają",
             "url": "https://vimeo.com/471413175",
             "who": "Piotr Rybak",
