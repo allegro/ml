@@ -1,6 +1,13 @@
 {
     "videos": [
         {
+            "title": "plT5: Universal Model For Polish Language",
+            "url": "https://www.youtube.com/watch?v=BJYL7QZD6z4",
+            "who": "Dariusz Kajtoch",
+            "description": "ML in PL 2021",
+            "thumb": "images/video-headers/darek-plt5.png"
+        },
+        {
             "title": "How to translate Allegro into foreign languages",
             "url": "https://www.youtube.com/watch?v=6KDU5TZohpM&list=PLzveSKBX_3N7yPb4ErB5HJ83eB6XvH37C&index=27",
             "who": "Karol Grzegorczyk",
