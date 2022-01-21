@@ -54,16 +54,16 @@ const HomePage: React.FunctionComponent<HomePageProps> = ({ posts, jobs, papers,
                 <link rel="shortcut icon" href="favicon.ico"/>
                 <link rel="canonical" href="https://ml.allegro.tech" itemProp="url"/>
                 <link rel="preload" href="images/splash.jpg" as="image" />
-                {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-1M1FJ5PXWW"></script>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DLR9LQKR5"></script>
                 <script dangerouslySetInnerHTML={{
                     __html: `
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
-                    gtag('config', 'G-1M1FJ5PXWW');
+                    gtag('config', 'G-0DLR9LQKR5');
                 `
                 }}>
-                </script> */}
+                </script>
             </Head>
             <Header/>
             <Container className="m-padding-top-24">
