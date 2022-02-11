@@ -1,6 +1,13 @@
 {
     "publications": [
         {
+            "authors": "Mikołaj Koszowski, Karol Grzegorczyk, Tsimur Hadeliya",
+            "date": "2021",
+            "paper_url": "https://aclanthology.org/2021.wmt-1.10/",
+            "accepted_at": "Proceedings of the Sixth Conference on Machine Translation",
+            "paper_title": "Allegro.eu Submission to WMT21 News Translation Task"
+        },
+        {
             "authors": "Konrad Czechowski, Tomasz Odrzygóźdź, Marek Zbysiński, Michał Zawalski, Krzysztof Olejnik, Yuhuai Wu, Łukasz Kuciński, Piotr Miłoś",
             "date": "2021",
             "paper_url": "https://arxiv.org/abs/2108.11204",
