@@ -13,6 +13,7 @@ const MENU_ITEMS = [
     // { label: 'Blog', url: 'https://blog.allegro.tech' },
     { label: 'Our projects', url: '#teams' },
     { label: 'Talks', url: '#presentations' },
+    { label: 'Blog', url: '#blog' },
     { label: 'Open Source', url: '#open-source' },
     { label: 'Publications', url: '#publications' },
     { label: 'Jobs', url: 'https://praca.allegro.pl' }

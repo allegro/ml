@@ -8,7 +8,7 @@ import List from "../metrum/List";
 import Avatar from '@material-ui/core/Avatar';
 import AvatarGroup from '@material-ui/lab/AvatarGroup';
 import formatDistance from 'date-fns/formatDistance'
-import { pl } from 'date-fns/locale'
+import { enUS } from 'date-fns/locale'
 import { Divider } from "@material-ui/core";
 
 export interface IPost {
@@ -41,7 +41,7 @@ const Post: React.FunctionComponent<PostProps> = ({ title, categories, pubDate, 
                     <Heading size="medium" maxLines={2}>{title}</Heading>
                 </a>
                 <Typography as="time" className="m-padding-bottom-16">
-                    {formatDistance(new Date(pubDate), new Date(), { locale: pl, addSuffix: true })}
+                    {formatDistance(new Date(pubDate), new Date(), { locale: enUS, addSuffix: true })}
                 </Typography>
                 <List>
                     {categories.map(category => (
@@ -74,7 +74,7 @@ const Post: React.FunctionComponent<PostProps> = ({ title, categories, pubDate, 
                     button
                     className="m-margin-top-16 m-display_block m-border-width_1 m-border-color_gray m-border-style-top_solid"
                     href={link}>
-                    przejdź do wpisu
+                    read post
                 </Link>
             </Card>
         </article>

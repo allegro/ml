@@ -77,23 +77,23 @@ const HomePage: React.FunctionComponent<HomePageProps> = ({ posts, jobs, papers,
                     ))}
                 </Grid>
             </Container>
-            {/* <Container className="m-padding-top-24">
-                <Heading size="xlarge" className="m-padding-left-24 m-padding-right-24">Blog</Heading>
+            <Container className="m-padding-top-24">
+                <Heading size="xlarge" id="blog" className="m-padding-left-24 m-padding-right-24">Blog</Heading>
                 <Grid>
-                    {posts.map(post => (
+                    {posts.filter(post => post.categories.includes("mlr")).map(post => (
                         <Grid.Col key={post.guid} size={12} smSize={6} xlSize={3}
                                   className="m-display-flex m-flex-direction_column">
                             <Post {...post} />
                         </Grid.Col>
                     ))}
                 </Grid>
-                <Link
+                {/* <Link
                     button
                     className="m-display_block m-margin-bottom_8 m-width_100"
                     href="https://blog.allegro.tech">
                     Zobacz więcej wpisów
-                </Link>
-            </Container> */}
+                </Link> */}
+            </Container>
             <Container className="m-padding-top-24">
                 <Heading size="xlarge" id="presentations" className="m-padding-left-24 m-padding-right-24">Talks</Heading>
                 <Grid>
