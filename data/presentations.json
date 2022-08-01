@@ -1,6 +1,13 @@
 {
     "videos": [
-                {
+        {
+            "title": "Use Your Data Wisely – Data-Centric NLP in the E-commerce Domain",
+            "url": "https://www.youtube.com/watch?v=zEgU0mIKiVA&t",
+            "who": "Paweł Olszewski",
+            "description": "Seminar at Warsaw.ai - Episode XV - 2.06.2022",
+            "thumb": "images/video-headers/pawel-warsawai.png"
+        },
+        {
             "title": "Evaluation of Transfer Learning for Polish with a Text-to-Text Model",
             "url": "https://s3.eu-west-2.wasabisys.com/lrec2022/sessions/575.mp4",
             "who": "Dariusz Kajtoch",
