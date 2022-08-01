@@ -1,5 +1,12 @@
 {
     "videos": [
+                {
+            "title": "Evaluation of Transfer Learning for Polish with a Text-to-Text Model",
+            "url": "https://s3.eu-west-2.wasabisys.com/lrec2022/sessions/575.mp4",
+            "who": "Dariusz Kajtoch",
+            "description": "Paper presentation at LREC 2022",
+            "thumb": "public/images/video-headers/darek-lrec2022.png"
+        },
         {
             "title": "Introduction to Offline Reinforcement Learning and its applications",
             "url": "https://www.youtube.com/watch?v=zF8TcTgcmRM",

@@ -1,6 +1,13 @@
 {
     "publications": [
         {
+            "authors": "Aleksandra Chrabrowa, Łukasz Dragan, Karol Grzegorczyk, Dariusz Kajtoch Mikołaj Koszowski, Robert Mroczkowski, Piotr Rybak",
+            "date": "2022",
+            "paper_url": "http://www.lrec-conf.org/proceedings/lrec2022/pdf/2022.lrec-1.466.pdf",
+            "accepted_at": "Proceedings of the 13th Conference on Language Resources and Evaluation (LREC 2022)",
+            "paper_title": "Evaluation of Transfer Learning for Polish with a Text-to-Text Model"
+        },
+        {
             "authors": "Mikołaj Koszowski, Karol Grzegorczyk, Tsimur Hadeliya",
             "date": "2021",
             "paper_url": "https://aclanthology.org/2021.wmt-1.10/",
