@@ -5,7 +5,7 @@
             "url": "https://s3.eu-west-2.wasabisys.com/lrec2022/sessions/575.mp4",
             "who": "Dariusz Kajtoch",
             "description": "Paper presentation at LREC 2022",
-            "thumb": "public/images/video-headers/darek-lrec2022.png"
+            "thumb": "images/video-headers/darek-lrec2022.png"
         },
         {
             "title": "Introduction to Offline Reinforcement Learning and its applications",
