@@ -3,9 +3,6 @@ import Card from "../metrum/Card";
 import Typography from "../metrum/Typography";
 import Heading from "../metrum/Heading";
 import Link from "../metrum/Link";
-import { Divider } from "@material-ui/core";
-import formatDistance from "date-fns/formatDistance";
-import { pl } from "date-fns/locale";
 import ReactMarkdown from "react-markdown";
 
 export interface IPodcast {
@@ -33,7 +30,7 @@ const Podcast: React.FunctionComponent<PodcastProps> = ({ guid, title, url, who,
                 <Typography className="m-padding-bottom-16">
                     {who}
                 </Typography>
-                <Typography className="m-flex-grow-1">
+                <Typography as="div" className="m-flex-grow-1">
                     <ReactMarkdown>{description}</ReactMarkdown>
                 </Typography>
                 <Link

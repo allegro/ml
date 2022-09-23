@@ -1,7 +1,5 @@
 {
-  "name": "allegro.tech",
-  "version": "1.0.0",
-  "description": "",
+  "name": "ml.allegro.tech",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
@@ -11,22 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/allegro/allegro.tech.git"
+    "url": "git+https://github.com/allegro/ml.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/allegro/allegro.tech/issues"
-  },
-  "homepage": "https://github.com/allegro/allegro.tech#readme",
   "dependencies": {
-    "@material-ui/core": "^4.11.3",
-    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@emotion/react": "11.10.4",
+    "@emotion/styled": "11.10.4",
+    "@mui/material": "5.10.6",
+    "@mui/styles": "5.10.6",
     "clsx": "^1.1.1",
     "date-fns": "^2.19.0",
     "dep": "0.18.3",
     "next": "^12.1.0",
-    "package.json": "2.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",

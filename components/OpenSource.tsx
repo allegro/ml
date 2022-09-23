@@ -31,9 +31,9 @@ const OpenSource: React.FunctionComponent<OpenSourceProps> = ({ name, url, descr
         <article className="m-margin-bottom_16 m-display-flex m-flex-column m-flex-grow_1">
             <Card className="m-display-flex m-flex-column m-flex-grow_1 m-padding-bottom-0">
                 <a href={url} title={name} className="m-text-decoration_none m-border-style-bottom_solid m-border-width_1 m-border-color_gray">
-                    <Heading size="medium" maxLines={1}><DynamicFaIcon name={icon}/> {name}</Heading>
+                    <Heading size="medium" maxLines={1} style={{display: 'flex'}}><div style={{marginRight: 10}}><DynamicFaIcon name={icon}/></div>{name}</Heading>
                 </a>
-                <Typography className="m-flex-grow-1">
+                <Typography as="div" className="m-flex-grow-1">
                     <ReactMarkdown>{description}</ReactMarkdown>
                 </Typography>
                 <Link

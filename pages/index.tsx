@@ -1,11 +1,9 @@
-const path = require('path');
-const fs = require('fs');
-
+import path from 'path';
+import fs from 'fs';
 import {default as papers} from "../data/publications.json";
 import {default as vid} from "../data/presentations.json";
 import {default as open_source} from "../data/open-source.json";
 import {default as teams} from "../data/projects.json";
-
 import React from 'react';
 import Head from "next/head";
 import Parser from 'rss-parser';
@@ -22,6 +20,7 @@ import Podcast, { IPodcast } from "../components/Podcast";
 import OpenSource, { IOpenSource } from "../components/OpenSource";
 import Paper, { IPaper } from "../components/Paper";
 import Project, { IProject } from "../components/Projects";
+import Script from 'next/script'
 
 import Tracking from "../components/Tracking";
 
@@ -34,8 +33,6 @@ interface HomePageProps {
     open_source: IOpenSource[];
     teams: IProject[];
 }
-
-
 
 const HomePage: React.FunctionComponent<HomePageProps> = ({ posts, jobs, papers, videos, videos2, open_source, teams }) => {
     return (
@@ -54,8 +51,8 @@ const HomePage: React.FunctionComponent<HomePageProps> = ({ posts, jobs, papers,
                 <link rel="shortcut icon" href="favicon.ico"/>
                 <link rel="canonical" href="https://ml.allegro.tech" itemProp="url"/>
                 <link rel="preload" href="images/splash.jpg" as="image" />
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DLR9LQKR5"></script>
-                <script dangerouslySetInnerHTML={{
+                <Script async src="https://www.googletagmanager.com/gtag/js?id=G-0DLR9LQKR5"></Script>
+                <Script dangerouslySetInnerHTML={{
                     __html: `
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
@@ -63,14 +60,14 @@ const HomePage: React.FunctionComponent<HomePageProps> = ({ posts, jobs, papers,
                     gtag('config', 'G-0DLR9LQKR5');
                 `
                 }}>
-                </script>
+                </Script>
             </Head>
             <Header/>
             <Container className="m-padding-top-24">
                 <Heading size="xlarge" id="teams" className="m-padding-left-24 m-padding-right-24">Teams</Heading>
                 <Grid>
-                    {teams.map(team => (
-                        <Grid.Col size={12} smSize={6} xlSize={4}
+                    {teams.map((team) => (
+                        <Grid.Col key={team.name} size={12} smSize={6} xlSize={4}
                                   className="m-display-flex m-flex-direction_column">
                             <Project {...team}/>
                         </Grid.Col>
@@ -80,30 +77,24 @@ const HomePage: React.FunctionComponent<HomePageProps> = ({ posts, jobs, papers,
             <Container className="m-padding-top-24">
                 <Heading size="xlarge" id="presentations" className="m-padding-left-24 m-padding-right-24">Talks</Heading>
                 <Grid>
-                    {videos.map(podcast => (
-                        <Grid.Col key={podcast.guid} size={12} smSize={6} xlSize={3}
+                    {videos.map(video => (
+                        <Grid.Col key={'1' + video.title} size={12} smSize={6} xlSize={3}
                                   className="m-display-flex m-flex-direction_column">
-                            <Podcast {...podcast}/>
+                            <Podcast {...video}/>
                         </Grid.Col>
                     ))}
-                    {videos2.map(podcast => (
-                        <Grid.Col key={podcast.guid} size={12} smSize={6} xlSize={3}
+                    {videos2.map(video => (
+                        <Grid.Col key={'2' + video.title} size={12} smSize={6} xlSize={3}
                                   className="m-display-flex m-flex-direction_column">
-                            <Podcast {...podcast}/>
+                            <Podcast {...video}/>
                         </Grid.Col>
                     ))}
                 </Grid>
-                {/* <Link
-                    button
-                    className="m-display_block m-margin-bottom_8 m-width_100"
-                    href="">
-                    See more videos
-                </Link> */}
             </Container>
             <Container className="m-padding-top-24">
                 <Heading size="xlarge" id="blog" className="m-padding-left-24 m-padding-right-24">Blog</Heading>
                 <Grid>
-                    {posts.filter(post => post.categories.includes("mlr")).map(post => (
+                    {posts.map(post => (
                         <Grid.Col key={post.guid} size={12} smSize={6} xlSize={3}
                                   className="m-display-flex m-flex-direction_column">
                             <Post {...post} />
@@ -121,30 +112,20 @@ const HomePage: React.FunctionComponent<HomePageProps> = ({ posts, jobs, papers,
                 <Heading size="xlarge" id="open-source" className="m-padding-left-24 m-padding-right-24">Open-Source</Heading>
                 <Grid>
                     {open_source.map(os_project => (
-                        <Grid.Col size={12} smSize={6} xlSize={4}
+                        <Grid.Col key={os_project.name} size={12} smSize={6} xlSize={4}
                                   className="m-display-flex m-flex-direction_column">
                             <OpenSource {...os_project}/>
                         </Grid.Col>
                     ))}
                 </Grid>
-                {/* <Link
-                    button
-                    className="m-display_block m-margin-bottom_8 m-width_100"
-                    href="https://podcast.allegro.tech">
-                    See more videos
-                </Link> */}
             </Container>
             <Container className="m-padding-top-24">
                 <Heading size="xlarge" id="publications" className="m-padding-left-24 m-padding-right-24">Publications</Heading>
                 <Container>
-                    {papers.map(event => (
-                        <Paper {...event}/>
+                    {papers.map((event, index) => (
+                        <Paper key={event.date + index} {...event}/>
                     ))}
                 </Container>
-                {/* <Link
-                    button
-                    className="m-display_block m-margin-bottom_8 m-width_100"
-                    href="https://www.meetup.com/allegrotech/events/">More of what we've published</Link> */}
             </Container>
             <Container className="m-padding-top-24">
                 <Heading size="xlarge" className="m-padding-left-24 m-padding-right-24">Job offers</Heading>
@@ -167,8 +148,8 @@ const HomePage: React.FunctionComponent<HomePageProps> = ({ posts, jobs, papers,
 export async function getStaticProps() {
     type CustomItem = { authors: IAuthor[] };
     const parser: Parser<any, CustomItem> = new Parser({ customFields: { item: ['authors'] } });
-    const postsPromise = parser.parseURL('https://blog.allegro.tech/feed.xml');
-    const jobsPromise = fetch('https://api.smartrecruiters.com/v1/companies/allegro/postings?department=2572821&custom_field.58c15608e4b01d4b19ddf790=c807eec2-8a53-4b55-b7c5-c03180f2059b')
+    const postsPromise = parser.parseURL('https://blog.allegro.tech/feed-all.xml');
+    const jobsPromise = fetch('https://api.smartrecruiters.com/v1/companies/allegro/postings?limit=5')
         .then(response => response.json())
         .then(json => json.content);
 
@@ -178,10 +159,15 @@ export async function getStaticProps() {
     const mlr_teams = teams.teams;
 
     const [posts, jobs] = await Promise.all([postsPromise, jobsPromise]);
+    const processedPosts = posts.items
+        .filter(post => post.categories)
+        .sort((a) => a.categories.includes('mlr') ? -1 : 1)
+        .map(post => ({...post, contentSnippet: post.contentSnippet.slice(0,200), content: null}))
+        .slice(0, 4);
 
     return {
         props: {
-            posts: addThumbnails(posts).items.slice(0, 4),
+            posts: addThumbnails(processedPosts),
             jobs: jobs.slice(0, 5),
             papers: ppapers.slice(0, 10),
             videos: videos.slice(0, 4),
@@ -193,7 +179,7 @@ export async function getStaticProps() {
 
     function addThumbnails(posts) {
         const thumbnails = fs.readdirSync('./public/images/post-headers').map(file => file.split(".").shift());
-        posts.items.map(post => {
+        posts.map(post => {
             for (let i = post.categories.length - 1; i >= 0; i--) {
                 if (thumbnails.includes(post.categories[i])) {
                     post.thumbnail = path.join('images/post-headers', `${post.categories[i]}.png`);

@@ -5,11 +5,10 @@ import Card from "../metrum/Card";
 import Link from "../metrum/Link";
 import Typography from "../metrum/Typography";
 import List from "../metrum/List";
-import Avatar from '@material-ui/core/Avatar';
-import AvatarGroup from '@material-ui/lab/AvatarGroup';
+import Avatar from '@mui/material/Avatar';
+import AvatarGroup from '@mui/material/AvatarGroup';
 import formatDistance from 'date-fns/formatDistance'
 import { enUS } from 'date-fns/locale'
-import { Divider } from "@material-ui/core";
 
 export interface IPost {
     guid: string;
@@ -23,9 +22,9 @@ export interface IPost {
 }
 
 export interface IAuthor {
-    name: string;
-    photo: string;
-    url: string;
+    name: string[];
+    photo: string[];
+    url: string[];
 }
 
 type PostProps = IPost
@@ -57,14 +56,14 @@ const Post: React.FunctionComponent<PostProps> = ({ title, categories, pubDate, 
                     <div className="m-display-flex m-flex-items_center">
                         <AvatarGroup max={2} className={`m-padding-right_16 ${styles.avatars}`}>
                             {authors.author.map((author: IAuthor) => (
-                                <Avatar key={author.name}
-                                        alt={author.name}
-                                        src={author.photo}
+                                <Avatar key={author.name[0]}
+                                        alt={author.name[0]}
+                                        src={author.photo[0]}
                                         imgProps={{ width: 32, height: 32 }}
                                 />
                             ))}
                         </AvatarGroup>
-                        <Link href={authors.author[0].url}>
+                        <Link href={authors.author[0].url[0]}>
                             {authors.author.length > 1 ? authors.author[0].name + '…' : authors.author.map((author: IAuthor) => author.name).join("")}
                         </Link>
                     </div>
