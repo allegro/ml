@@ -149,7 +149,7 @@ export async function getStaticProps() {
     type CustomItem = { authors: IAuthor[] };
     const parser: Parser<any, CustomItem> = new Parser({ customFields: { item: ['authors'] } });
     const postsPromise = parser.parseURL('https://blog.allegro.tech/feed-all.xml');
-    const jobsPromise = fetch('https://api.smartrecruiters.com/v1/companies/allegro/postings?limit=5')
+    const jobsPromise = fetch('https://api.smartrecruiters.com/v1/companies/allegro/postings?q=machine&limit=5')
         .then(response => response.json())
         .then(json => json.content);
 
@@ -161,7 +161,7 @@ export async function getStaticProps() {
     const [posts, jobs] = await Promise.all([postsPromise, jobsPromise]);
     const processedPosts = posts.items
         .filter(post => post.categories)
-        .sort((a) => a.categories.includes('mlr') ? -1 : 1)
+        .filter(post => post.categories.includes('mlr'))
         .map(post => ({...post, contentSnippet: post.contentSnippet.slice(0,200), content: null}))
         .slice(0, 4);
 
