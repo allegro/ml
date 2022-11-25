@@ -7,6 +7,7 @@ interface ColProps extends React.HTMLAttributes<HTMLDivElement>{
     mdSize?: number;
     lgSize?: number;
     xlSize?: number;
+    children: React.ReactNode;
 }
 
 const Col: React.FunctionComponent<ColProps> = ({ children, className, size, smSize, mdSize, lgSize, xlSize }) => <div className={classnames(
@@ -19,7 +20,7 @@ const Col: React.FunctionComponent<ColProps> = ({ children, className, size, smS
     className
 )}>{children}</div>
 
-const Grid: React.FunctionComponent & { Col: typeof Col } = ({ children }) => <div className="m-display_flex m-flex-wrap_1 m-flex-grow_1 m-grid">{children}</div>;
+const Grid: React.FunctionComponent<ColProps> & { Col: typeof Col } = ({ children }) => <div className="m-display_flex m-flex-wrap_1 m-flex-grow_1 m-grid">{children}</div>;
 
 Grid.Col = Col;
 

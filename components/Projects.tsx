@@ -2,10 +2,6 @@ import React from "react";
 import Card from "../metrum/Card";
 import Typography from "../metrum/Typography";
 import Heading from "../metrum/Heading";
-import Link from "../metrum/Link";
-import { Divider } from "@mui/material";
-import formatDistance from "date-fns/formatDistance";
-import { pl } from "date-fns/locale";
 import ReactMarkdown from "react-markdown";
 import * as Icons from "react-icons/fa";
 

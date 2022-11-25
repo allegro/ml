@@ -6,6 +6,7 @@ interface CardProps {
     as?: string;
     className?: string;
     transparent?: boolean;
+    children: React.ReactNode
 }
 
 const Card: React.FunctionComponent<CardProps> = ({ as = "div", className, transparent = false, children, ...props }) => React.createElement(as, {

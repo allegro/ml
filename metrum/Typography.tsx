@@ -4,6 +4,7 @@ import classnames from "clsx";
 interface TypographyProps {
     as?: string;
     className?: string;
+    children: React.ReactNode
 }
 
 const Typography: React.FunctionComponent<TypographyProps> = ({ children, className, as = "p", ...props }) => React.createElement(as, {

@@ -4,6 +4,7 @@ import classnames from "clsx";
 interface ContainerProps {
     as?: string;
     className?: string;
+    children: React.ReactNode;
 }
 
 const Container: React.FunctionComponent<ContainerProps> = ({ children, className, as = "div", ...props }) => React.createElement(as, {

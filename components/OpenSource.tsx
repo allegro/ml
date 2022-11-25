@@ -2,8 +2,6 @@ import React from "react";
 import Card from "../metrum/Card";
 import Typography from "../metrum/Typography";
 import Link from "../metrum/Link";
-import formatDistance from "date-fns/formatDistance";
-import { pl } from "date-fns/locale";
 import Heading from "../metrum/Heading";
 import * as Icons from "react-icons/fa";
 
