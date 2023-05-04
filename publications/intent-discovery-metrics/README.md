@@ -8,7 +8,7 @@ setting._
 Authors: Aleksandra Chrabrowa, Tsimur Hadeliya, Dariusz Kajtoch, Robert Mroczkowski,
 Piotr Rybak
 
-Paper link: _to be added_
+Paper link: https://aclanthology.org/2023.findings-eacl.68/
 
 Presented at: EACL 2023
 
