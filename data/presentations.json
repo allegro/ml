@@ -1,6 +1,14 @@
 {
     "videos": [
         {
+            "title": "Retrieval at Scale",
+            "url": "https://www.youtube.com/watch?v=fP0e3nuUyRY",
+            "who": "Aleksandra Osowska-Kurczab & Jacek Szczerbiński",
+            "description": "Sponsored talk by Allegro for ML in PL Conference 2022",
+            "thumb": "images/video-headers/ola-jacek-mlinpl-2022.png"
+
+        },
+        {
             "title": "Use Your Data Wisely – Data-Centric NLP in the E-commerce Domain",
             "url": "https://www.youtube.com/watch?v=zEgU0mIKiVA&t",
             "who": "Paweł Olszewski",
