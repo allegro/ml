@@ -1,34 +1,34 @@
 {
     "teams": [
         {
-            "name": "CX Robots",
+            "name": "Machine Translation",
             "icon": "FaRobot",
-            "description": "We focus on using NLP models to understand and automate the communication at Allegro, e.g. automatically answer questions asked to our customer support. Our main research directions are related to pretraining and evaluating large language models, semi-supervised clustering, and human-in-the-loop NLP."
+            "description": "We are developing an in-house Machine Translation engine specifically for e-commerce purposes, aiming to provide better value compared to off-the-shelf solutions. Our focus is on accurately translating industry-specific terms and jargon, while also creating a scalable and cost-efficient solution. We employ state-of-the-art machine learning methods, involving human evaluators and automatic quality estimation models to continually enhance translation quality. Our goal is to make our platform accessible to non-Polish speakers globally and contribute to the machine translation community."
+        },
+        {
+            "name": "Language Modeling",
+            "icon": "FaSitemap",
+            "description": "We employ state-of-the-art deep learning models developing NLP algorithms for a diverse set of problems that require the understanding of the natural language spoken in the e-commerce platform. We work with Large Language Models (LLMs), by fine-tuning them, sometimes pre-training them, in order to provide the company with general purpose Foundation Models that can be tailored for specific downstream tasks. Among the applications we are working at daily basis, we find: Semantic Search, Question Answering, Conversational AI, Generative AI, Named Entity Recognition."
         },
         {
             "name": "Learning to Rank",
             "icon": "FaList",
-            "description": "In Learning to Rank, our goal is to develop ranking models which find the optimal ordering of items for a given search results list, based on past users’ interactions. Such models constitute the final stage of Allegro’s search engine, serving millions of searches a day.\n\nSome of the research problems we tackle are:\n1. Incorporation of multimodal data (textual, visual, tabular) into an end-to-end ranking model.\n1. Search engine personalization\n1. Developing novel ranking architectures and loss functions"
+            "description": "In Learning to Rank our goal is to develop machine learning models for search. Our main focus is on ranking solutions in all phases of the search pipeline, serving millions of searches a day. Currently our main area of expertise is neural text-based search and relevance. We’re also interested in topics such as reranking, feature interaction architectures, and personalization."
         },
         {
-            "name": "Visual Search",
+            "name": "Computer Vision",
             "icon": "FaImages",
-            "description": "In Visual Search, we create machine learning models which enable us to create image embeddings suitable for similarity search. The main challenge is to make these embeddings sensitive to relevant visual traits of products like category, style, colour, pattern etc. while maintaining insensitivity to irrelevant information such as background, presence of a model, different camera angles etc."
-        },
-        {
-            "name": "PCS Automation",
-            "icon": "FaShoppingBag",
-            "description": "We employ a diverse set of machine learning techniques to improve the product-based experience on Allegro. Problems that we solve include, e.g., product matching i.e., being able to infer the product being sold for a merchant-created offer, or automatic integration of product definitions from external product catalogs. Examples of our research directions include sampling methods in similarity learning or extreme classification methods."
+            "description": "At MLR Computer Vision, our primary objective is to elevate the user experience by leveraging machine learning image processing algorithms. We specifically concentrate on image representation learning for Visual Search and the development of robust image classification models. Presently, our research is focused on the integration of multiple modalities into our models. This integration enables our models to process not only images but also harness diverse sources of information such as product titles, descriptions, and attributes. The implementation of these multimodal models holds significant potential in various domains, including semantic search and the enhancement of product catalog quality. By employing such models, we aim to deliver superior solutions in these areas, ultimately providing enhanced user experiences."
         },
         {
             "name": "Recommendations",
-            "icon": "FaSitemap",
-            "description": "The main purpose of our team is to address users’ needs, show them a broad range of products they would be interested in - thus serving as an inspiration and connecting them with useful, contextual offers.\nWe ground our algorithms on previous collective behaviors of our user-base. But we also work towards incorporating content features of the items into the models. Our main challenges include building novel algorithms that can give good recommendations for our users and also operate at scale. Both being a significant endeavour, considering the sheer amount of traffic Allegro serves daily.\n\nWe focus our research on:\n1. Building item representation, that can serve as retrieval basis,\n1. Improving ways to detect user intents in clear (and useful) way,\n1. Current trends in recommender systems."
+            "icon": "FaShoppingBag",
+            "description": "Our team's primary objective is to fulfill users' needs by providing them with a diverse range of products that align with their interests. We strive to inspire users and connect them with relevant offers by leveraging recommender systems. To achieve this, we rely on the collective behaviors of our user-base, forming the foundation of our algorithms. However, we also incorporate content features of the items into our models, enriching recommendations with exploratory algorithms. These algorithms not only utilize historical data but also actively engage with the world, enabling us to explore new possibilities. Our major challenges revolve around developing innovative algorithms that can deliver high-quality recommendations while effectively handling Allegro's significant daily traffic. This ambitious endeavor requires us to operate at scale, ensuring seamless user experiences across the platform."
         },
         {
-            "name": "Reinforcement Learning",
+            "name": "ML Ops",
             "icon": "FaSignal",
-            "description": "We aim to enhance various Allegro projects with exploratory algorithms, which are capable to not only exploit historical data but explore via interactions with the world. Currently, we are working on the optimization of Search Engine Marketing (SEM) and Content Optimization projects. Our main research directions include contextual bandits, A/B testing alternatives with casual impact discovery and offline RL. "
+            "description": "The MLOps team aims to optimize, scale, and deploy advanced machine learning models. We blend artificial intelligence, software engineering, and DevOps expertise to embrace the full potential of research engineers and data scientists from other teams. We orchestrate the entire machine learning lifecycle, from data preprocessing and annotation to model deployment, using the cutting-edge infrastructure of Google Cloud and Kubernetes. We're operating at a massive scale with several terabytes of data processed daily and thousands of predictions per second. "
         }
     ]
 }
