@@ -8,7 +8,7 @@
         {
             "name": "Language Modeling",
             "icon": "FaSitemap",
-            "description": "We employ state-of-the-art deep learning models developing NLP algorithms for a diverse set of problems that require the understanding of the natural language spoken in the e-commerce platform. We work with Large Language Models (LLMs), by fine-tuning them, sometimes pre-training them, in order to provide the company with general purpose Foundation Models that can be tailored for specific downstream tasks. Among the applications we are working at daily basis, we find: Semantic Search, Question Answering, Conversational AI, Generative AI, Named Entity Recognition."
+            "description": "We employ state-of-the-art deep learning models and a range of NLP algorithms to solve diverse problems that require semantic understanding of the specialized language used within a unique environment of an e-commerce platform. We utilize and develop Large Language Models (LLMs), with the goal of providing the company with general purpose Foundation Models that can be tailored for specific downstream tasks. On a daily basis, we use our models in the following applications: Semantic Search, Question Answering, Conversational AI, Generative AI, Named Entity Recognition."
         },
         {
             "name": "Learning to Rank",
