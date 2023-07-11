@@ -1,7 +1,14 @@
 {
     "publications": [
         {
-            "authors": "Aleksandra Chrabrowa, Łukasz Dragan, Karol Grzegorczyk, Dariusz Kajtoch Mikołaj Koszowski, Robert Mroczkowski, Piotr Rybak",
+            "authors": "Aleksandra Chrabrowa, Tsimur Hadeliya, Dariusz Kajtoch, Robert Mroczkowski, Piotr Rybak",
+            "date": "2023",
+            "paper_url": "https://aclanthology.org/2023.findings-eacl.68/",
+            "accepted_at": "Findings of the Association for Computational Linguistics: EACL 2023",
+            "paper_title": "Going beyond research datasets: Novel intent discovery in the industry setting"
+        },
+        {
+            "authors": "Aleksandra Chrabrowa, Łukasz Dragan, Karol Grzegorczyk, Dariusz Kajtoch, Mikołaj Koszowski, Robert Mroczkowski, Piotr Rybak",
             "date": "2022",
             "paper_url": "http://www.lrec-conf.org/proceedings/lrec2022/pdf/2022.lrec-1.466.pdf",
             "accepted_at": "Proceedings of the 13th Conference on Language Resources and Evaluation (LREC 2022)",
