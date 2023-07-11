@@ -64,7 +64,7 @@ const HomePage: React.FunctionComponent<HomePageProps> = ({ posts, jobs, papers,
             </Head>
             <Header/>
             <Container className="m-padding-top-24">
-                <Heading size="xlarge" id="teams" className="m-padding-left-24 m-padding-right-24">Teams</Heading>
+                <Heading size="xlarge" id="teams" className="m-padding-left-24 m-padding-right-24">Areas</Heading>
                 <Grid>
                     {teams.map((team) => (
                         <Grid.Col key={team.name} size={12} smSize={6} xlSize={4}
@@ -127,18 +127,21 @@ const HomePage: React.FunctionComponent<HomePageProps> = ({ posts, jobs, papers,
                     ))}
                 </Container>
             </Container>
-            <Container className="m-padding-top-24">
-                <Heading size="xlarge" className="m-padding-left-24 m-padding-right-24">Job offers</Heading>
-                <Container>
-                    {jobs.map(job => (
-                        <Job key={job.id} id={job.id} name={job.name} location={job.location}/>
-                    ))}
-                </Container>
-                <Link
-                    button
-                    className="m-display_block m-margin-bottom_8 m-width_100"
-                    href="https://allegro.pl/praca">See more job offers</Link>
-            </Container>
+            {
+                jobs.length > 0 ? 
+                    <Container className="m-padding-top-24">
+                        <Heading size="xlarge" className="m-padding-left-24 m-padding-right-24">Job offers</Heading>
+                        <Container>
+                            {jobs.map(job => (
+                                <Job key={job.id} id={job.id} name={job.name} location={job.location}/>
+                            ))}
+                        </Container>
+                        <Link
+                            button
+                            className="m-display_block m-margin-bottom_8 m-width_100"
+                            href="https://allegro.pl/praca">See more job offers</Link>
+                    </Container> : ""
+            }
             <Footer/>
             <Tracking/>
         </React.Fragment>
