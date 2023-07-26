@@ -1,12 +1,18 @@
 {
     "videos": [
         {
+            "title": "Clever language modeling at Allegro",
+            "url": "https://youtu.be/1hcs3qzVxjQ",
+            "who": "Aleksandra Osowska-Kurczab & Jacek Szczerbiński",
+            "description": "Allegro Tech talk",
+            "thumb": "images/video-headers/ola-jacek-tech-2023.png"
+        },
+        {
             "title": "Retrieval at Scale",
             "url": "https://www.youtube.com/watch?v=fP0e3nuUyRY",
             "who": "Aleksandra Osowska-Kurczab & Jacek Szczerbiński",
             "description": "Sponsored talk by Allegro for ML in PL Conference 2022",
             "thumb": "images/video-headers/ola-jacek-mlinpl-2022.png"
-
         },
         {
             "title": "Use Your Data Wisely – Data-Centric NLP in the E-commerce Domain",
