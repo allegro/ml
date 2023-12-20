@@ -13,3 +13,4 @@ const OldBlogUrl = () => {
 OldBlogUrl.getInitialProps = async () => ({});
 
 export default OldBlogUrl;
+
