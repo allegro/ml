@@ -1,5 +1,12 @@
 {
     "videos": [
+              {
+            "title": "The structure of customer service data @Allegro",
+            "url": "https://www.youtube.com/watch?v=jK-NX_qufjI",
+            "who": "Aleksandra Chrabrowa",
+            "description": "GHOST Day: AMLC 2022",
+            "thumb": "images/video-headers/ola-ghost22.png"
+        },
         {
             "title": "Retrieval at Scale",
             "url": "https://www.youtube.com/watch?v=fP0e3nuUyRY",
