@@ -1,5 +1,10 @@
 {
     "projects": [
+              {
+            "name": "llm-wrapper",
+            "url": "https://github.com/allegro/llm-wrapper",
+            "description": "versatile and powerful library designed to streamline the process of querying large language models.\n*  Simple and User-Friendly Interface,\n* Asynchronous Querying,\n* Automatic Retrying Mechanism,\n* Error Handling and Management,\n* Output Parsing"
+        },
         {
             "name": "allRank",
             "url": "https://github.com/allegro/allRank",
