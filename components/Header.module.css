@@ -1,6 +1,7 @@
 .hero {
-    /* background: url('../public/images/splash.jpg') no-repeat center bottom; */
-    background: url('../public/images/splash4.jpg')  no-repeat center bottom;
+    background: url('../public/images/v01.png') no-repeat center center;
+    background-size: 2560px;
+    height: 600px;
 }
 
 .image {
