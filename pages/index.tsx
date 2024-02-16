@@ -175,7 +175,7 @@ export async function getStaticProps() {
             papers: ppapers.slice(0, 10),
             videos: videos.slice(0, 4),
             videos2: videos.slice(4, 8),
-            open_source: os_projects.slice(0, 4),
+            open_source: os_projects.slice(0, 9),
             teams:  mlr_teams,
         },
     }
