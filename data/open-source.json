@@ -1,11 +1,11 @@
 {
     "projects": [
-                    {
+        {
             "name": "Hugging Face Allegro",
             "url": "https://huggingface.co/allegro",
             "description": "We contribute to the NLP community by publishing models and datasets to the Hugging Face Hub!\n"
         },
-              {
+        {
             "name": "llm-wrapper",
             "url": "https://github.com/allegro/llm-wrapper",
             "description": "Versatile and powerful library designed to streamline the process of querying large language models.\n*  Simple and User-Friendly Interface,\n* Asynchronous Querying,\n* Automatic Retrying Mechanism,\n* Error Handling and Management,\n* Output Parsing"
