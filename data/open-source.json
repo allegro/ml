@@ -1,14 +1,19 @@
 {
     "projects": [
+                    {
+            "name": "Hugging Face Allegro",
+            "url": "https://huggingface.co/allegro",
+            "description": "We contribute to the NLP community by publishing models and datasets to the Hugging Face Hub!\n"
+        },
               {
             "name": "llm-wrapper",
             "url": "https://github.com/allegro/llm-wrapper",
-            "description": "versatile and powerful library designed to streamline the process of querying large language models.\n*  Simple and User-Friendly Interface,\n* Asynchronous Querying,\n* Automatic Retrying Mechanism,\n* Error Handling and Management,\n* Output Parsing"
+            "description": "Versatile and powerful library designed to streamline the process of querying large language models.\n*  Simple and User-Friendly Interface,\n* Asynchronous Querying,\n* Automatic Retrying Mechanism,\n* Error Handling and Management,\n* Output Parsing"
         },
         {
             "name": "allRank",
             "url": "https://github.com/allegro/allRank",
-            "description": "framework for training neural Learning-to-Rank (LTR) models,\nfeaturing implementations of:\n*  common pointwise, pairwise and listwise loss function,\n* fully connected and Transformer-like scoring function,\n* commonly used evaluation metrics like Normalized Discounted Cumulative Gain (NDCG) and Mean Reciprocal Rank (MRR},\n* click-models for experiments on simulated click-through data"
+            "description": "Framework for training neural Learning-to-Rank (LTR) models,\nfeaturing implementations of:\n*  common pointwise, pairwise and listwise loss function,\n* fully connected and Transformer-like scoring function,\n* commonly used evaluation metrics like Normalized Discounted Cumulative Gain (NDCG) and Mean Reciprocal Rank (MRR},\n* click-models for experiments on simulated click-through data"
         },
         {
             "name": "KLEJ Benchmark",
@@ -18,7 +23,7 @@
         },
         {
             "name": "HerBERT",
-            "url": "https://huggingface.co/allegro",
+            "url": "https://huggingface.co/allegro/herbert-large-cased",
             "description": "HerBERT is a BERT-based language model trained on six different corpora for Polish language understanding. It achieves state-of-the-art results on multiple downstream tasks, including [KLEJ Benchmark](https://klejbenchmark.com/) and Part-of-Speech tagging. We release both Base and Large variants of the model as a part of [transformers](https://github.com/huggingface/transformers) library for anyone to use."
         }
     ]
