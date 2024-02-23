@@ -51,6 +51,7 @@ const HomePage: React.FunctionComponent<HomePageProps> = ({ posts, jobs, papers,
                 <link rel="shortcut icon" href="favicon.ico"/>
                 <link rel="canonical" href="https://ml.allegro.tech" itemProp="url"/>
                 <link rel="preload" href="images/splash.jpg" as="image" />
+                <script defer data-domain="ml.allegro.tech" src="https://plausible.io/js/script.js"></script>
             </Head>
             <Header/>
             <Container className="m-padding-top-24">
