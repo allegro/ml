@@ -6,8 +6,8 @@
             "description": "We contribute to the NLP community by publishing models and datasets to the Hugging Face Hub!\n"
         },
         {
-            "name": "llm-wrapper",
-            "url": "https://github.com/allegro/llm-wrapper",
+            "name": "allms",
+            "url": "https://github.com/allegro/allms",
             "description": "Versatile and powerful library designed to streamline the process of querying large language models.\n*  Simple and User-Friendly Interface,\n* Asynchronous Querying,\n* Automatic Retrying Mechanism,\n* Error Handling and Management,\n* Output Parsing"
         },
         {
