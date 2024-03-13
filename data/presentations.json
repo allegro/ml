@@ -1,6 +1,27 @@
 {
     "videos": [
               {
+            "title": "Machine Translation at Allegro – Use your model wise but data wiser",
+            "url": "https://www.youtube.com/watch?v=dIrCMFiyGj0",
+            "who": "Mikołaj Koszowski",
+            "description": "Seminar at Warsaw.ai - Episode XXI - 18.01.2024",
+            "thumb": "images/video-headers/miko-warsawai.png"
+        },
+              {
+            "title": "Building a vector search engine",
+            "url": "https://www.youtube.com/watch?v=a-B9Rcl6-3A",
+            "who": "Maciej Mościcki",
+            "description": "MOPS Community",
+            "thumb": "images/video-headers/maciej-mlops.png"
+        },
+              {
+            "title": "Architecting ML for Huge Impact and Scale",
+            "url": "https://www.youtube.com/watch?v=ESEeo_7ERRc",
+            "who": "Szymon Jacoń",
+            "description": "MOPS Community",
+            "thumb": "images/video-headers/szymon-mlops.png"
+        },
+              {
             "title": "The structure of customer service data @Allegro",
             "url": "https://www.youtube.com/watch?v=jK-NX_qufjI",
             "who": "Aleksandra Chrabrowa",
