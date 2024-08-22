@@ -1,5 +1,12 @@
 {
     "publications": [
+              {
+            "authors": "Roman Dušek, Aleksander Wawer, Christopher Galias, Lidia Wojciechowska",
+            "date": "2023",
+            "paper_url": "https://annals-csis.org/Volume_35/drp/7569.html",
+            "accepted_at": "Proceedings of the 18th Conference on Computer Science and Intelligence Systems, FedCSIS 2023",
+            "paper_title": "Improving Domain-Specific Retrieval by NLI Fine-Tuning"
+        },
         {
             "authors": "Aleksandra Chrabrowa, Tsimur Hadeliya, Dariusz Kajtoch, Robert Mroczkowski, Piotr Rybak",
             "date": "2023",
