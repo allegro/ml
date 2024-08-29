@@ -1,6 +1,13 @@
 {
     "publications": [
         {
+            "authors": "Alicja Rączkowska, Aleksandra Osowska-Kurczab, Jacek Szczerbiński, Kalina Jasinska-Kobus, Klaudia Nazarko",
+            "date": "2024",
+            "paper_url": "https://arxiv.org/abs/2407.10992",
+            "accepted_at": "arxiv",
+            "paper_title": "AlleNoise - large-scale text classification benchmark dataset with real-world label noise"
+        },
+        {
             "authors": "Roman Dušek, Aleksander Wawer, Christopher Galias, Lidia Wojciechowska",
             "date": "2023",
             "paper_url": "https://annals-csis.org/Volume_35/drp/7569.html",
