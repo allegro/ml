@@ -1,13 +1,10 @@
-import path from 'path';
-import fs from 'fs';
 import {default as papers} from "../data/publications.json";
 import {default as vid} from "../data/presentations.json";
 import {default as open_source} from "../data/open-source.json";
 import {default as teams} from "../data/projects.json";
 import React from 'react';
 import Head from "next/head";
-import Parser from 'rss-parser';
-import Post, { IAuthor, IPost } from "../components/Post";
+import Post, { IPost } from "../components/Post";
 import Header from "../components/Header";
 import Grid from "../metrum/Grid";
 import Container from '../metrum/Container';
@@ -15,14 +12,14 @@ import Heading from "../metrum/Heading";
 import Footer from "../components/Footer";
 import Job, { IJob } from "../components/Job";
 import Link from "../metrum/Link";
-import Event, { IEvent } from "../components/Event";
 import Podcast, { IPodcast } from "../components/Podcast";
 import OpenSource, { IOpenSource } from "../components/OpenSource";
 import Paper, { IPaper } from "../components/Paper";
 import Project, { IProject } from "../components/Projects";
-import Script from 'next/script'
 
 import Tracking from "../components/Tracking";
+import axios from 'axios';
+import * as cheerio from 'cheerio';
 
 interface HomePageProps {
     posts: IPost[];
@@ -139,10 +136,61 @@ const HomePage: React.FunctionComponent<HomePageProps> = ({ posts, jobs, papers,
     );
 }
 
+export async function scrapeTechBlog(url: string) {
+    let results = [];
+
+    try {
+        const response = await axios.get(url);
+        const mlrPostsDomTree = cheerio.load(response.data);
+        const getValue = (el, selector) => mlrPostsDomTree(el).find(selector).length
+            ? mlrPostsDomTree(el).find(selector)
+            : mlrPostsDomTree(el);
+
+        mlrPostsDomTree("article")
+            .each((articleIndex, articleElement) => {
+                const title = getValue(articleElement, "h2 a").text().trim();
+                const link = getValue(articleElement, "h2 a").attr("href")
+                const date = getValue(articleElement, "span.text-sm").text().trim()
+                const abstract = getValue(articleElement, "p").text().trim()
+                
+                let avatars = [];
+                getValue(articleElement, "img").each((_, avatarElement) => {
+                    avatars.push(avatarElement.attribs.src)
+                })
+
+                let authors = [];
+                getValue(articleElement, "a.text-sm").each((index, authorElement) => {
+                    authors.push(
+                        {
+                            name: authorElement.children[0].data.trim(),
+                            url: "https://blog.allegro.tech" + authorElement.attribs.href,
+                            photo: "https://blog.allegro.tech" + avatars[index]
+                        }
+                    )
+                });
+
+                results.push(
+                    {
+                        guid: articleIndex,
+                        title: title,
+                        authors: authors,
+                        link: "https://blog.allegro.tech" + link,
+                        pubDate: date,
+                        contentSnippet: abstract
+                    }
+                )
+            })
+    }
+    catch (err) {
+        console.error("Error during request:", err);
+        throw err;
+    }
+
+    return results
+}
+
 export async function getStaticProps() {
-    type CustomItem = { authors: IAuthor[] };
-    const parser: Parser<any, CustomItem> = new Parser({ customFields: { item: ['authors'] } });
-    const postsPromise = parser.parseURL('https://blog.allegro.tech/feed-all.xml');
+    const postsPagePromise = scrapeTechBlog("https://blog.allegro.tech/tag/mlr");
     const jobsPromise = fetch('https://api.smartrecruiters.com/v1/companies/allegro/postings?q=machine&limit=5')
         .then(response => response.json())
         .then(json => json.content);
@@ -152,16 +200,11 @@ export async function getStaticProps() {
     const os_projects = open_source.projects;
     const mlr_teams = teams.teams;
 
-    const [posts, jobs] = await Promise.all([postsPromise, jobsPromise]);
-    const processedPosts = posts.items
-        .filter(post => post.categories)
-        .filter(post => post.categories.includes('mlr'))
-        .map(post => ({...post, contentSnippet: post.contentSnippet.slice(0,200), content: null}))
-        .slice(0, 4);
+    const [posts, jobs] = await Promise.all([postsPagePromise, jobsPromise]);
 
     return {
         props: {
-            posts: addThumbnails(processedPosts),
+            posts: posts.slice(0, 4),
             jobs: jobs.slice(0, 5),
             papers: ppapers.slice(0, 10),
             videos: videos.slice(0, 4),
@@ -169,20 +212,6 @@ export async function getStaticProps() {
             open_source: os_projects.slice(0, 9),
             teams:  mlr_teams,
         },
-    }
-
-    function addThumbnails(posts) {
-        const thumbnails = fs.readdirSync('./public/images/post-headers').map(file => file.split(".").shift());
-        posts.map(post => {
-            for (let i = post.categories.length - 1; i >= 0; i--) {
-                if (thumbnails.includes(post.categories[i])) {
-                    post.thumbnail = path.join('images/post-headers', `${post.categories[i]}.png`);
-                    return;
-                }
-            }
-            post.thumbnail = 'images/post-headers/default.jpg';
-        })
-        return posts;
     }
 }
 
