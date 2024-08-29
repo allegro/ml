@@ -1,6 +1,13 @@
 {
     "videos": [
-              {
+        {
+            "title": "Understand, translate, respond - Clever language modeling at Allegro",
+            "url": "https://www.youtube.com/watch?v=YHLvMqi-wSo",
+            "who": "Aleksandra Osowska-Kurczab & Jacek Szczerbiński",
+            "description": "Talk at Data Science Summit Machine Learning Edition - 14.06.2024",
+            "thumb": "images/video-headers/ola-jacek-dssmle-2024.png"
+        },
+        {
             "title": "Machine Translation at Allegro – Use your model wise but data wiser",
             "url": "https://www.youtube.com/watch?v=dIrCMFiyGj0",
             "who": "Mikołaj Koszowski",
