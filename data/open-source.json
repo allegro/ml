@@ -1,6 +1,11 @@
 {
     "projects": [
         {
+            "name": "AlleNoise",
+            "url": "https://github.com/allegro/AlleNoise",
+            "description": "Large-scale text classification benchmark dataset with real-world label noise. It is meant to spark development of new robust classification methods."
+        },
+        {
             "name": "Hugging Face Allegro",
             "url": "https://huggingface.co/allegro",
             "description": "We contribute to the NLP community by publishing models and datasets to the Hugging Face Hub!\n"
