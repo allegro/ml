@@ -1,6 +1,13 @@
 {
     "videos": [
         {
+            "title": "AlleNoise - large-scale text classification benchmark dataset with real-world label noise",
+            "url": "https://www.youtube.com/watch?v=bZEeUeRTgz4",
+            "who": "Alicja Rączkowska",
+            "description": "Sponsored talk at MLinPL 2024",
+            "thumb": "images/video-headers/ala-mlinpl-2024.png"
+        },
+        {
             "title": "Understand, translate, respond - Clever language modeling at Allegro",
             "url": "https://www.youtube.com/watch?v=YHLvMqi-wSo",
             "who": "Aleksandra Osowska-Kurczab & Jacek Szczerbiński",
