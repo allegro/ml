@@ -1,6 +1,13 @@
 {
     "videos": [
         {
+            "title": "Recommender Systems Unboxed: The Tech Behind Personalized Experiences",
+            "url": "https://www.youtube.com/watch?v=2B4KAlhkT0s",
+            "who": "Aleksandra Osowska-Kurczab",
+            "description": "Talk at Women in Tech Summit 2025",
+            "thumb": "images/video-headers/ola-women-in-tech-2025.png"
+        },
+        {
             "title": "AlleNoise - large-scale text classification benchmark dataset with real-world label noise",
             "url": "https://www.youtube.com/watch?v=bZEeUeRTgz4",
             "who": "Alicja Rączkowska",
