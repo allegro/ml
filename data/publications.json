@@ -1,6 +1,13 @@
 {
     "publications": [
         {
+            "authors": "Alicja Rączkowska, Riccardo Belluzzo, Piotr Zieliński, Joanna Baran, Paweł Olszewski",
+            "date": "2025",
+            "paper_url": "https://arxiv.org/abs/2507.02529",
+            "accepted_at": "arXiv",
+            "paper_title": "RetrySQL: text-to-SQL training with retry data for self-correcting query generation"
+        },
+        {
             "authors": "Alicja Rączkowska, Aleksandra Osowska-Kurczab, Jacek Szczerbiński, Kalina Jasinska-Kobus, Klaudia Nazarko",
             "date": "2024",
             "paper_url": "https://arxiv.org/abs/2407.10992",
