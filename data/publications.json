@@ -1,6 +1,13 @@
 {
     "publications": [
         {
+            "authors": "Aleksandra Osowska-Kurczab, Klaudia Nazarko, Mateusz Marzec, Lidia Wojciechowska, Eliška Kremeňová",
+            "date": "2025",
+            "paper_url": "https://arxiv.org/abs/2508.03702",
+            "accepted_at": "RecSys 2025",
+            "paper_title": "Suggest, Complement, Inspire: Story of Two Tower Recommendations at Allegro.com"
+        },
+        {
             "authors": "Alicja Rączkowska, Riccardo Belluzzo, Piotr Zieliński, Joanna Baran, Paweł Olszewski",
             "date": "2025",
             "paper_url": "https://arxiv.org/abs/2507.02529",
