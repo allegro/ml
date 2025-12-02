@@ -5,7 +5,14 @@
             "date": "2026",
             "paper_url": "https://arxiv.org/abs/2507.02529",
             "accepted_at": "40th AAAI Conference on Artificial Intelligence (AAAI 2026)",
-            "paper_title": "RetrySQL: text-to-SQL training with retry data for self-correcting query generation"
+            "paper_title": "RetrySQL: Text-to-SQL Training with Retry Data for Self-correcting Query Generation"
+        },
+        {
+            "authors": "Mikołaj Pokrywka, Wojciech Kusa, Mieszko Rutkowski, Mikołaj Koszowski",
+            "date": "2025",
+            "paper_url": "https://aclanthology.org/2025.acl-short.7/",
+            "accepted_at": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025)",
+            "paper_title": "ConECT Dataset: Overcoming Data Scarcity in Context-Aware E-Commerce MT"
         },
         {
             "authors": "Aleksandra Osowska-Kurczab, Klaudia Nazarko, Mateusz Marzec, Lidia Wojciechowska, Eliška Kremeňová",
