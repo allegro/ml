@@ -1,0 +1,44 @@
+{
+    "roles": [
+        {
+            "title": "Senior Data Scientist – Recommendations",
+            "type": "Data Scientist",
+            "link": "https://jobs.allegro.eu/job-areas/tech-data/"
+        },
+        {
+            "title": "Senior Research Engineer – Learning to Rank",
+            "type": "Research Engineer",
+            "link": "https://careers.allegro.eu/job/Warszawa-Senior-Research-Engineer-Learning-to-Rank-00-841/1337076255/"
+        },
+        {
+            "title": "ML Researcher – Computer Vision",
+            "type": "Research Engineer",
+            "link": "https://jobs.allegro.eu/job-areas/tech-data/"
+        },
+        {
+            "title": "Product Analyst – Experimentation",
+            "type": "Product Analyst",
+            "link": "https://jobs.allegro.eu/job-areas/tech-data/"
+        },
+        {
+            "title": "Senior ML Engineer – Shopper AI",
+            "type": "Engineer",
+            "link": "https://jobs.allegro.eu/job-areas/tech-data/"
+        },
+        {
+            "title": "Data Scientist – Predictive Commerce",
+            "type": "Data Scientist",
+            "link": "https://jobs.allegro.eu/job-areas/tech-data/"
+        },
+        {
+            "title": "Software Engineer – ML Platform",
+            "type": "Engineer",
+            "link": "https://jobs.allegro.eu/job-areas/tech-data/"
+        },
+        {
+            "title": "Product Analyst – Predictive Operations",
+            "type": "Product Analyst",
+            "link": "https://jobs.allegro.eu/job-areas/tech-data/"
+        }
+    ]
+}

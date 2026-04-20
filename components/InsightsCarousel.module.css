@@ -1,0 +1,273 @@
+.section {
+    padding: 48px 0;
+    background: #ffffff;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+@media (min-width: 640px) {
+    .container {
+        padding: 0 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 32px;
+    }
+}
+
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sectionTitle {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-gray-900, #111827);
+    margin: 0 0 12px;
+}
+
+.sectionSubtitle {
+    font-size: 20px;
+    color: var(--color-gray-600, #4b5563);
+    margin: 0;
+}
+
+.carouselWrapper {
+    position: relative;
+    padding: 0 32px;
+}
+
+@media (min-width: 640px) {
+    .carouselWrapper {
+        padding: 0;
+    }
+}
+
+.navBtn {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 32px;
+    height: 32px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 0;
+}
+
+@media (min-width: 640px) {
+    .navBtn {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.navBtn:hover {
+    background: var(--color-orange, #f97316);
+    color: #ffffff;
+}
+
+.navBtnPrev {
+    left: 0;
+}
+
+@media (min-width: 640px) {
+    .navBtnPrev {
+        transform: translateY(-50%) translateX(-16px);
+    }
+}
+
+.navBtnNext {
+    right: 0;
+}
+
+@media (min-width: 640px) {
+    .navBtnNext {
+        transform: translateY(-50%) translateX(16px);
+    }
+}
+
+/* Insight card */
+.slideItem {
+    padding: 4px;
+}
+
+@media (min-width: 640px) {
+    .slideItem {
+        padding: 0 16px;
+    }
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.videoThumb {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background: var(--color-gray-900, #111827);
+    display: block;
+    text-decoration: none;
+}
+
+.videoThumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.videoThumb:hover img {
+    opacity: 0.6;
+}
+
+.playBtn {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playCircle {
+    width: 64px;
+    height: 64px;
+    background: var(--color-orange, #f97316);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.videoThumb:hover .playCircle {
+    transform: scale(1.1);
+}
+
+.cardContent {
+    padding: 24px;
+}
+
+.cardTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-gray-900, #111827);
+    margin: 0 0 8px;
+    line-height: 1.3;
+}
+
+.cardDesc {
+    font-size: 14px;
+    color: var(--color-gray-600, #4b5563);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Publication card */
+.pubLink {
+    display: block;
+    text-decoration: none;
+    height: 100%;
+}
+
+.pubLink:hover .pubTitle {
+    color: var(--color-orange, #f97316);
+}
+
+.pubBanner {
+    position: relative;
+    height: 144px;
+    background: linear-gradient(135deg, var(--color-gray-900, #111827), var(--color-gray-800, #1f2937), #7c2d12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.pubBannerOverlay {
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+    background-image: radial-gradient(circle at 20% 80%, #f97316 0%, transparent 50%), radial-gradient(circle at 80% 20%, #f97316 0%, transparent 50%);
+}
+
+.venueBadge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: var(--color-orange, #f97316);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 9999px;
+}
+
+.pubIcon {
+    width: 64px;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background 0.2s;
+}
+
+.pubLink:hover .pubIcon {
+    background: rgba(249, 115, 22, 0.8);
+}
+
+.pubTitle {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color-gray-900, #111827);
+    margin: 0 0 8px;
+    line-height: 1.4;
+    transition: color 0.2s;
+}
+
+.pubDesc {
+    font-size: 13px;
+    color: var(--color-gray-600, #4b5563);
+    margin: 0 0 16px;
+    line-height: 1.5;
+}
+
+.pubView {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--color-orange, #f97316);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Publications sub-section */
+.pubsSection {
+    margin-top: 96px;
+}
