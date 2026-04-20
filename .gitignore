@@ -1,14 +1,43 @@
-### Component generated files ###
+### Dependencies ###
 node_modules/
-*.log
-*-tests.xml
-dist/
-screenshots/
-.tmp/
-*.css.d.ts
-.nyc_output
-coverage
-.lighthouseci
 
-### Custom ignored files ###
-.next
+### Next.js ###
+.next/
+out/
+
+### Build & dist ###
+dist/
+build/
+
+### Testing & coverage ###
+coverage/
+.nyc_output/
+*-tests.xml
+
+### Logs ###
+*.log
+npm-debug.log*
+
+### OS files ###
+.DS_Store
+Thumbs.db
+
+### IDE ###
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+*.swp
+*.swo
+
+### TypeScript ###
+*.tsbuildinfo
+*.css.d.ts
+
+### Misc ###
+.tmp/
+screenshots/
+.lighthouseci/
+.env
+.env.local
+.env.*.local
