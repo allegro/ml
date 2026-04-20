@@ -1,0 +1,15 @@
+{
+    "siteName": "Allegro AI Hub",
+    "siteUrl": "https://ml.allegro.tech",
+    "description": "Allegro AI Hub — the driving force behind Allegro's evolution as the AI-first e-commerce leader. Real-time ranking, recommendations, ML research and more.",
+    "ogImage": "https://ml.allegro.tech/images/hero-bg.png",
+    "analytics": {
+        "domain": "ml.allegro.tech",
+        "scriptUrl": "https://plausible.io/js/script.js"
+    },
+    "assets": {
+        "logo": "images/allegro-logo.png",
+        "heroBg": "images/hero-bg.png",
+        "favicon": "favicon.ico"
+    }
+}

@@ -10,6 +10,6 @@ const OldAuthorsUrl = () => {
     )
 }
 
-OldAuthorsUrl.getInitialProps = async () => ({});
+export const getStaticProps = () => ({ props: {} });
 
 export default OldAuthorsUrl;

@@ -22,13 +22,23 @@ interface InsightsCarouselProps {
     papers: IResearchPaper[];
 }
 
+const CAROUSEL_BREAKPOINTS = [
+    { maxWidth: 640, slides: 1 },
+    { maxWidth: 1024, slides: 2 },
+];
+const CAROUSEL_DEFAULT_SLIDES = 3;
+const CAROUSEL_SPEED = 500;
+const INSIGHTS_AUTOPLAY_SPEED = 5000;
+const PAPERS_AUTOPLAY_SPEED = 6000;
+
 function useSlidesToShow() {
     const getCount = useCallback(() => {
         if (typeof window === "undefined") return 1;
         const w = window.innerWidth;
-        if (w < 640) return 1;
-        if (w < 1024) return 2;
-        return 3;
+        for (const bp of CAROUSEL_BREAKPOINTS) {
+            if (w < bp.maxWidth) return bp.slides;
+        }
+        return CAROUSEL_DEFAULT_SLIDES;
     }, []);
 
     const [count, setCount] = useState(1);
@@ -51,17 +61,17 @@ const InsightsCarousel: React.FunctionComponent<InsightsCarouselProps> = ({ insi
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: CAROUSEL_SPEED,
         slidesToShow,
         slidesToScroll: 1,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: INSIGHTS_AUTOPLAY_SPEED,
     };
 
     const pubSettings = {
         ...settings,
-        autoplaySpeed: 6000,
+        autoplaySpeed: PAPERS_AUTOPLAY_SPEED,
     };
 
     return (
@@ -101,7 +111,7 @@ const InsightsCarousel: React.FunctionComponent<InsightsCarouselProps> = ({ insi
                                         <img src={insight.thumbnail} alt={insight.title} />
                                         <div className={styles.playBtn}>
                                             <div className={styles.playCircle}>
-                                                <Play color="#ffffff" size={28} fill="currentColor" style={{ marginLeft: 2 }} />
+                                                <Play color="#ffffff" size={28} fill="currentColor" className={styles.playIcon} />
                                             </div>
                                         </div>
                                     </a>

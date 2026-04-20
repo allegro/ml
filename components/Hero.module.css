@@ -35,24 +35,52 @@
 }
 
 .heroTitle {
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 700;
     margin: 0 0 20px;
     line-height: 1.1;
 }
 
 .heroDescription {
-    font-size: 20px;
+    font-size: 16px;
     color: #e5e7eb;
     margin: 0 0 24px;
     line-height: 1.6;
 }
 
 .heroWelcome {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     color: #e5e7eb;
     margin: 0 0 24px;
+}
+
+@media (min-width: 640px) {
+    .heroTitle {
+        font-size: 40px;
+    }
+
+    .heroDescription {
+        font-size: 18px;
+    }
+
+    .heroWelcome {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .heroTitle {
+        font-size: 48px;
+    }
+
+    .heroDescription {
+        font-size: 20px;
+    }
+
+    .heroWelcome {
+        font-size: 20px;
+    }
 }
 
 .heroActions {

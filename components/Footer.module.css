@@ -92,6 +92,7 @@
     cursor: pointer;
     padding: 0;
     text-align: left;
+    text-decoration: none;
     transition: color 0.2s;
 }
 
@@ -125,6 +126,10 @@
 
 .socialLink:hover {
     background: var(--color-orange, #f97316);
+}
+
+.socialIcon {
+    filter: brightness(0) invert(1);
 }
 
 /* Bottom */

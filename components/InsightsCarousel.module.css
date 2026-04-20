@@ -163,6 +163,10 @@
     transition: transform 0.2s;
 }
 
+.playIcon {
+    margin-left: 2px;
+}
+
 .videoThumb:hover .playCircle {
     transform: scale(1.1);
 }

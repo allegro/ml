@@ -10,6 +10,6 @@ const OldJobsUrl = () => {
     )
 }
 
-OldJobsUrl.getInitialProps = async () => ({});
+export const getStaticProps = () => ({ props: {} });
 
 export default OldJobsUrl;

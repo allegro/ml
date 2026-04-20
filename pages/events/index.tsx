@@ -10,6 +10,6 @@ const OldEventsUrl = () => {
     )
 }
 
-OldEventsUrl.getInitialProps = async () => ({});
+export const getStaticProps = () => ({ props: {} });
 
 export default OldEventsUrl;

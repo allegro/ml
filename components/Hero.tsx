@@ -1,22 +1,14 @@
 import React from "react";
 import styles from "./Hero.module.css";
 import { ArrowRight, Info } from "lucide-react";
-
-const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-        const headerOffset = 80;
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-    }
-};
+import { scrollToSection } from "../utils/scroll";
+import { default as siteConfig } from "../data/site-config.json";
 
 const Hero: React.FunctionComponent = () => {
     return (
         <section className={styles.hero}>
             <div className={styles.heroBg}>
-                <img src="images/hero-bg.png" alt="" />
+                <img src={siteConfig.assets.heroBg} alt="" />
             </div>
             <div className={styles.heroContent}>
                 <div className={styles.heroText}>

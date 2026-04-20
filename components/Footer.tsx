@@ -1,28 +1,9 @@
 import React from "react";
 import styles from "./Footer.module.css";
+import { handleAnchorClick } from "../utils/scroll";
+import { default as navData } from "../data/navigation.json";
 
-const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-        const headerOffset = 80;
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-    }
-};
-
-const SOCIAL_LINKS = [
-    { iconUrl: "https://assets.allegrostatic.com/metrum/icon/github-6a18df1729.svg", label: "GitHub", url: "https://github.com/allegro" },
-    { iconUrl: "https://assets.allegrostatic.com/metrum/icon/facebook-a2b92f9dcb.svg", label: "Facebook", url: "https://www.facebook.com/allegro.tech/" },
-    { iconUrl: "https://assets.allegrostatic.com/metrum/icon/twitter-25164a58aa.svg", label: "X (Twitter)", url: "https://x.com/allegrotech" },
-];
-
-const NAV_LINKS = [
-    { label: "Contributions", target: "media" },
-    { label: "ML Research", target: "publications" },
-    { label: "About Us", target: "areas" },
-    { label: "Careers", target: "cta" },
-];
+const footerNavLinks = [...navData.items, ...navData.footerExtra];
 
 const Footer: React.FunctionComponent = () => (
     <footer className={styles.footer}>
@@ -41,11 +22,11 @@ const Footer: React.FunctionComponent = () => (
                 <div>
                     <h3 className={styles.linksTitle}>Quick Links</h3>
                     <ul className={styles.linksList}>
-                        {NAV_LINKS.map(({ label, target }) => (
+                        {footerNavLinks.map(({ label, target }) => (
                             <li key={label}>
-                                <button className={styles.linkBtn} onClick={() => scrollToSection(target)}>
+                                <a href={`#${target}`} className={styles.linkBtn} onClick={(e) => handleAnchorClick(e, target)}>
                                     {label}
-                                </button>
+                                </a>
                             </li>
                         ))}
                     </ul>
@@ -54,7 +35,7 @@ const Footer: React.FunctionComponent = () => (
                 <div>
                     <h3 className={styles.socialTitle}>Connect</h3>
                     <div className={styles.socialIcons}>
-                        {SOCIAL_LINKS.map(({ iconUrl, label, url }) => (
+                        {navData.socialLinks.map(({ iconUrl, label, url }) => (
                             <a
                                 key={label}
                                 href={url}
@@ -63,7 +44,7 @@ const Footer: React.FunctionComponent = () => (
                                 className={styles.socialLink}
                                 aria-label={label}
                             >
-                                <img src={iconUrl} alt={label} width={20} height={20} style={{ filter: 'brightness(0) invert(1)' }} />
+                                <img src={iconUrl} alt={label} width={20} height={20} className={styles.socialIcon} />
                             </a>
                         ))}
                     </div>

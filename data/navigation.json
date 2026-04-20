@@ -1,0 +1,16 @@
+{
+    "items": [
+        { "label": "Contributions", "target": "media" },
+        { "label": "ML Research", "target": "publications" },
+        { "label": "About Us", "target": "areas" }
+    ],
+    "cta": { "label": "Join Us", "target": "cta" },
+    "footerExtra": [
+        { "label": "Careers", "target": "cta" }
+    ],
+    "socialLinks": [
+        { "iconUrl": "https://assets.allegrostatic.com/metrum/icon/github-6a18df1729.svg", "label": "GitHub", "url": "https://github.com/allegro" },
+        { "iconUrl": "https://assets.allegrostatic.com/metrum/icon/facebook-a2b92f9dcb.svg", "label": "Facebook", "url": "https://www.facebook.com/allegro.tech/" },
+        { "iconUrl": "https://assets.allegrostatic.com/metrum/icon/twitter-25164a58aa.svg", "label": "X (Twitter)", "url": "https://x.com/allegrotech" }
+    ]
+}

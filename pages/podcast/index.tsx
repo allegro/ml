@@ -10,6 +10,6 @@ const OldPodcastUrl = () => {
     )
 }
 
-OldPodcastUrl.getInitialProps = async () => ({});
+export const getStaticProps = () => ({ props: {} });
 
 export default OldPodcastUrl;

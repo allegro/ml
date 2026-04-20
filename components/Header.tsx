@@ -1,28 +1,15 @@
 import React from "react";
 import styles from "./Header.module.css";
 import { Menu, X } from "lucide-react";
-
-const NAV_ITEMS = [
-    { label: 'Contributions', target: 'media' },
-    { label: 'ML Research', target: 'publications' },
-    { label: 'About Us', target: 'areas' },
-];
-
-const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-        const headerOffset = 80;
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-    }
-};
+import { handleAnchorClick, scrollToSection } from "../utils/scroll";
+import { default as navData } from "../data/navigation.json";
+import { default as siteConfig } from "../data/site-config.json";
 
 const Header: React.FunctionComponent = () => {
     const [menuOpen, setMenuOpen] = React.useState(false);
 
-    const handleNav = (target: string) => {
-        scrollToSection(target);
+    const handleMobileNav = (e: React.MouseEvent<HTMLAnchorElement>, target: string) => {
+        handleAnchorClick(e, target);
         setMenuOpen(false);
     };
 
@@ -30,19 +17,19 @@ const Header: React.FunctionComponent = () => {
         <header className={styles.header}>
             <nav className={styles.nav}>
                 <a href="/" className={styles.logoGroup}>
-                    <img src="images/allegro-logo.png" alt="Allegro" className={styles.logoImg} />
+                    <img src={siteConfig.assets.logo} alt="Allegro" className={styles.logoImg} />
                     <span className={styles.logoText}>AI Hub</span>
                 </a>
 
                 <div className={styles.desktopNav}>
-                    {NAV_ITEMS.map(({ label, target }) => (
-                        <button key={label} className={styles.navLink} onClick={() => handleNav(target)}>
+                    {navData.items.map(({ label, target }) => (
+                        <a key={label} href={`#${target}`} className={styles.navLink} onClick={(e) => handleAnchorClick(e, target)}>
                             {label}
-                        </button>
+                        </a>
                     ))}
-                    <button className={styles.joinBtn} onClick={() => handleNav('cta')}>
-                        Join Us
-                    </button>
+                    <a href={`#${navData.cta.target}`} className={styles.joinBtn} onClick={(e) => handleAnchorClick(e, navData.cta.target)}>
+                        {navData.cta.label}
+                    </a>
                 </div>
 
                 <button
@@ -56,14 +43,14 @@ const Header: React.FunctionComponent = () => {
 
             {menuOpen && (
                 <div className={styles.mobileNav}>
-                    {NAV_ITEMS.map(({ label, target }) => (
-                        <button key={label} className={styles.mobileNavLink} onClick={() => handleNav(target)}>
+                    {navData.items.map(({ label, target }) => (
+                        <a key={label} href={`#${target}`} className={styles.mobileNavLink} onClick={(e) => handleMobileNav(e, target)}>
                             {label}
-                        </button>
+                        </a>
                     ))}
-                    <button className={styles.mobileJoinBtn} onClick={() => handleNav('cta')}>
-                        Join Us
-                    </button>
+                    <a href={`#${navData.cta.target}`} className={styles.mobileJoinBtn} onClick={(e) => handleMobileNav(e, navData.cta.target)}>
+                        {navData.cta.label}
+                    </a>
                 </div>
             )}
         </header>
