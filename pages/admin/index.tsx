@@ -60,7 +60,7 @@ const Admin = () => {
                                     className={styles.secret}
                                     style={{ animationDelay: "0s" }}
                                 >
-                                    <p className={styles.secretText}>P O Z D R A W I A M</p>
+                                    <p className={styles.secretText}>P O Z D R A W I A M Y</p>
                                     <p className={styles.secretSub}>
                                         — Allegro AI Hub team 🧡
                                     </p>
