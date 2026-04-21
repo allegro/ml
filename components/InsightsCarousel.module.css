@@ -153,22 +153,23 @@
 }
 
 .playCircle {
-    width: 64px;
-    height: 64px;
-    background: var(--color-orange, #f97316);
-    border-radius: 50%;
+    width: 68px;
+    height: 48px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.2s;
+    transition: background 0.2s;
 }
 
 .playIcon {
     margin-left: 2px;
+    color: #ffffff;
 }
 
 .videoThumb:hover .playCircle {
-    transform: scale(1.1);
+    background: #ff0000;
 }
 
 .cardContent {
@@ -203,19 +204,31 @@
 
 .pubBanner {
     position: relative;
-    height: 144px;
-    background: linear-gradient(135deg, var(--color-gray-900, #111827), var(--color-gray-800, #1f2937), #7c2d12);
+    height: 200px;
+    background: var(--color-gray-900, #111827);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     overflow: hidden;
+    padding: 16px;
 }
 
 .pubBannerOverlay {
     position: absolute;
     inset: 0;
-    opacity: 0.1;
+    opacity: 0.08;
     background-image: radial-gradient(circle at 20% 80%, #f97316 0%, transparent 50%), radial-gradient(circle at 80% 20%, #f97316 0%, transparent 50%);
+}
+
+.pubPreview {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+    border-radius: 4px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .venueBadge {
@@ -228,22 +241,6 @@
     font-weight: 600;
     padding: 4px 8px;
     border-radius: 9999px;
-}
-
-.pubIcon {
-    width: 64px;
-    height: 64px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: background 0.2s;
-}
-
-.pubLink:hover .pubIcon {
-    background: rgba(249, 115, 22, 0.8);
 }
 
 .pubTitle {

@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState, useCallback } from "react";
 import Slider from "react-slick";
-import { ChevronLeft, ChevronRight, Play, FileText, ExternalLink } from "lucide-react";
+import { ChevronLeft, ChevronRight, Play, ExternalLink } from "lucide-react";
 import styles from "./InsightsCarousel.module.css";
 
 export interface IInsight {
@@ -15,6 +15,7 @@ export interface IResearchPaper {
     description: string;
     url: string;
     venue: string;
+    thumbnail: string;
 }
 
 interface InsightsCarouselProps {
@@ -161,9 +162,7 @@ const InsightsCarousel: React.FunctionComponent<InsightsCarouselProps> = ({ insi
                                     <div className={styles.pubBanner}>
                                         <div className={styles.pubBannerOverlay} />
                                         <span className={styles.venueBadge}>{pub.venue}</span>
-                                        <div className={styles.pubIcon}>
-                                            <FileText color="#ffffff" size={28} />
-                                        </div>
+                                        <img src={pub.thumbnail} alt={pub.title} className={styles.pubPreview} />
                                     </div>
                                     <div className={styles.cardContent}>
                                         <h3 className={styles.pubTitle}>{pub.title}</h3>
