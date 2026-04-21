@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "../../components/EasterEgg.module.css";
 
 const LINES = [
-    { delay: 300, type: "prompt", text: "$ ssh admin@ml.allegro.tech" },
+    { delay: 300, type: "prompt", text: "$ ssh admin@ai.allegro.tech" },
     { delay: 800, type: "text", text: "Connecting to 10.0.42.137..." },
     { delay: 1400, type: "text", text: "Authentication successful." },
     { delay: 2000, type: "prompt", text: "admin@ai-hub:~$ cat /etc/motd" },
