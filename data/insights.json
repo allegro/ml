@@ -9,31 +9,31 @@
         {
             "title": "Recommender Systems Unboxed",
             "description": "The tech behind personalized experiences - Women in Tech Summit 2025",
-            "thumbnail": "https://ai.allegro.tech/images/video-headers/ola-women-in-tech-2025.png",
+            "thumbnail": "images/video-headers/ola-women-in-tech-2025.webp",
             "videoUrl": "https://www.youtube.com/watch?v=2B4KAlhkT0s"
         },
         {
             "title": "AlleNoise: Enhancing Search with Synthetic Data",
             "description": "Discover how we leverage synthetic data to improve search quality - ML in PL Conference 2024",
-            "thumbnail": "https://ai.allegro.tech/images/video-headers/ala-mlinpl-2024.png",
+            "thumbnail": "images/video-headers/ala-mlinpl-2024.webp",
             "videoUrl": "https://www.youtube.com/watch?v=bZEeUeRTgz4"
         },
         {
             "title": "Understand, Translate, Respond",
             "description": "Clever language modeling at Allegro - Data Science Summit 2024",
-            "thumbnail": "https://ai.allegro.tech/images/video-headers/ola-jacek-dssmle-2024.png",
+            "thumbnail": "images/video-headers/ola-jacek-dssmle-2024.webp",
             "videoUrl": "https://www.youtube.com/watch?v=YHLvMqi-wSo"
         },
         {
             "title": "Dense Retrieval for Allegro Search Engine",
             "description": "Learn about the two-tower architecture details underpinning search",
-            "thumbnail": "https://ai.allegro.tech/images/video-headers/ola-warsawai2024.png",
+            "thumbnail": "images/video-headers/ola-warsawai2024.webp",
             "videoUrl": "https://youtu.be/8CcRsX4IMnU?t=3403"
         },
         {
             "title": "Algorithmic Price Optimization with ML",
             "description": "Using machine learning models to define price subsidies",
-            "thumbnail": "https://ai.allegro.tech/images/video-headers/miko-warsawai.png",
+            "thumbnail": "images/video-headers/miko-warsawai.webp",
             "videoUrl": ""
         }
     ]

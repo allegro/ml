@@ -5,35 +5,35 @@
             "description": "Authors: Alicja Raczkowska, Riccardo Belluzzo, Piotr Zielinski, Joanna Baran, Pawel Olszewski",
             "url": "https://arxiv.org/abs/2507.02529",
             "venue": "AAAI 2026",
-            "thumbnail": "images/paper-thumbnails/retrysql.png"
+            "thumbnail": "images/paper-thumbnails/retrysql.webp"
         },
         {
             "title": "ConECT Dataset: Overcoming Data Scarcity in Context-Aware E-Commerce MT",
             "description": "Authors: Mikolaj Pokrywka, Wojciech Kusa, Mieszko Rutkowski, Mikolaj Koszowski",
             "url": "https://aclanthology.org/2025.acl-short.7/",
             "venue": "ACL 2025",
-            "thumbnail": "images/paper-thumbnails/conect.png"
+            "thumbnail": "images/paper-thumbnails/conect.webp"
         },
         {
             "title": "Suggest, Complement, Inspire: Story of Two Tower Recommendations at Allegro.com",
             "description": "Authors: Aleksandra Osowska-Kurczab, Klaudia Nazarko, Mateusz Marzec, Lidia Wojciechowska, Eliska Kremenova",
             "url": "https://arxiv.org/abs/2508.03702",
             "venue": "RecSys 2025",
-            "thumbnail": "images/paper-thumbnails/suggest.png"
+            "thumbnail": "images/paper-thumbnails/suggest.webp"
         },
         {
             "title": "AlleNoise - large-scale text classification benchmark dataset with real-world label noise",
             "description": "Authors: Alicja Raczkowska, Aleksandra Osowska-Kurczab, Jacek Szczerbinski, Kalina Jasinska-Kobus, Klaudia Nazarko",
             "url": "https://arxiv.org/abs/2407.10992",
             "venue": "AISTATS 2025",
-            "thumbnail": "images/paper-thumbnails/allenoise.png"
+            "thumbnail": "images/paper-thumbnails/allenoise.webp"
         },
         {
             "title": "Improving Domain-Specific Retrieval by NLI Fine-Tuning",
             "description": "Authors: Roman Dusek, Aleksander Wawer, Christopher Galias, Lidia Wojciechowska",
             "url": "https://annals-csis.org/Volume_35/drp/7569.html",
             "venue": "FedCSIS 2023",
-            "thumbnail": "images/paper-thumbnails/retrieval.png"
+            "thumbnail": "images/paper-thumbnails/retrieval.webp"
         }
     ]
 }

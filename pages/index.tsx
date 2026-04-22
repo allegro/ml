@@ -41,11 +41,9 @@ const HomePage: React.FunctionComponent<HomePageProps> = ({ insights, papers, pi
                 <meta name="twitter:title" content={siteConfig.siteName} />
                 <meta name="twitter:description" content={siteConfig.description} />
                 <meta name="twitter:image" content={siteConfig.ogImage} />
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
                 <link rel="shortcut icon" href={siteConfig.assets.favicon} />
                 <link rel="canonical" href={siteConfig.siteUrl} itemProp="url" />
-                <link rel="preload" href={siteConfig.assets.heroBg} as="image" />
+                <link rel="preload" href={siteConfig.assets.heroBg} as="image" type="image/webp" />
                 <script defer data-domain={siteConfig.analytics.domain} src={siteConfig.analytics.scriptUrl}></script>
                 <script
                     type="application/ld+json"
@@ -57,7 +55,7 @@ const HomePage: React.FunctionComponent<HomePageProps> = ({ insights, papers, pi
                                     "@type": "Organization",
                                     name: "Allegro AI Hub",
                                     url: siteConfig.siteUrl,
-                                    logo: `${siteConfig.siteUrl}/${siteConfig.assets.logo}`,
+                                    logo: `${siteConfig.siteUrl}/images/allegro-logo.png`,
                                     description: siteConfig.description,
                                     parentOrganization: {
                                         "@type": "Organization",
@@ -81,10 +79,12 @@ const HomePage: React.FunctionComponent<HomePageProps> = ({ insights, papers, pi
                 />
             </Head>
             <Header />
-            <Hero />
-            <InsightsCarousel insights={insights} papers={papers} />
-            <FourPillars pillars={pillars} />
-            <FinalCTA roles={roles} />
+            <main>
+                <Hero />
+                <InsightsCarousel insights={insights} papers={papers} />
+                <FourPillars pillars={pillars} />
+                <FinalCTA roles={roles} />
+            </main>
             <Footer />
         </React.Fragment>
     );

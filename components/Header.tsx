@@ -17,7 +17,7 @@ const Header: React.FunctionComponent = () => {
         <header className={styles.header}>
             <nav className={styles.nav}>
                 <a href="/" className={styles.logoGroup}>
-                    <img src={siteConfig.assets.logo} alt="Allegro" className={styles.logoImg} />
+                    <img src={siteConfig.assets.logo} alt="Allegro" className={styles.logoImg} width={1280} height={430} />
                     <span className={styles.logoText}>AI Hub</span>
                 </a>
 

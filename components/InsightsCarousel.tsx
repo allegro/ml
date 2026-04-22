@@ -57,7 +57,25 @@ function useSlidesToShow() {
 const InsightsCarousel: React.FunctionComponent<InsightsCarouselProps> = ({ insights, papers }) => {
     const sliderRef = useRef<Slider>(null);
     const pubSliderRef = useRef<Slider>(null);
+    const sectionRef = useRef<HTMLElement>(null);
     const slidesToShow = useSlidesToShow();
+
+    useEffect(() => {
+        const section = sectionRef.current;
+        if (!section) return;
+        const fixTabIndex = () => {
+            section.querySelectorAll<HTMLElement>('.slick-slide[aria-hidden="true"] a, .slick-slide[aria-hidden="true"] button').forEach((el) => {
+                el.setAttribute("tabindex", "-1");
+            });
+            section.querySelectorAll<HTMLElement>('.slick-slide:not([aria-hidden="true"]) a, .slick-slide:not([aria-hidden="true"]) button').forEach((el) => {
+                el.removeAttribute("tabindex");
+            });
+        };
+        fixTabIndex();
+        const observer = new MutationObserver(fixTabIndex);
+        observer.observe(section, { attributes: true, attributeFilter: ["aria-hidden"], subtree: true });
+        return () => observer.disconnect();
+    }, [slidesToShow]);
 
     const settings = {
         dots: true,
@@ -76,7 +94,7 @@ const InsightsCarousel: React.FunctionComponent<InsightsCarouselProps> = ({ insi
     };
 
     return (
-        <section id="media" className={styles.section}>
+        <section id="media" className={styles.section} ref={sectionRef}>
             <div className={styles.container}>
                 <div className={styles.sectionHeader}>
                     <h2 className={styles.sectionTitle}>Preview our contributions</h2>
@@ -109,7 +127,7 @@ const InsightsCarousel: React.FunctionComponent<InsightsCarouselProps> = ({ insi
                                         rel="noopener noreferrer"
                                         className={styles.videoThumb}
                                     >
-                                        <img src={insight.thumbnail} alt={insight.title} />
+                                        <img src={insight.thumbnail} alt={insight.title} width={800} height={450} loading="lazy" style={{ objectFit: "cover" }} />
                                         <div className={styles.playBtn}>
                                             <div className={styles.playCircle}>
                                                 <Play color="#ffffff" size={28} fill="currentColor" className={styles.playIcon} />
@@ -162,7 +180,7 @@ const InsightsCarousel: React.FunctionComponent<InsightsCarouselProps> = ({ insi
                                     <div className={styles.pubBanner}>
                                         <div className={styles.pubBannerOverlay} />
                                         <span className={styles.venueBadge}>{pub.venue}</span>
-                                        <img src={pub.thumbnail} alt={pub.title} className={styles.pubPreview} />
+                                        <img src={pub.thumbnail} alt={pub.title} className={styles.pubPreview} width={400} height={518} loading="lazy" />
                                     </div>
                                     <div className={styles.cardContent}>
                                         <h3 className={styles.pubTitle}>{pub.title}</h3>
