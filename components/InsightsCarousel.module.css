@@ -273,3 +273,110 @@
 .pubsSection {
     margin-top: 96px;
 }
+
+/* See All button */
+.seeAllWrap {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.seeAllBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: 1px solid var(--color-gray-200, #e5e7eb);
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-gray-900, #111827);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.seeAllBtn:hover {
+    background: var(--color-gray-50, #f9fafb);
+    border-color: var(--color-gray-400, #9ca3af);
+}
+
+.chevronUp {
+    transform: rotate(180deg);
+}
+
+/* Full expandable list */
+.fullList {
+    margin-top: 24px;
+    border: 1px solid var(--color-gray-200, #e5e7eb);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.listItem {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 12px;
+    align-items: center;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--color-gray-100, #f3f4f6);
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.15s;
+}
+
+.listItem:last-child {
+    border-bottom: none;
+}
+
+.listItem:hover {
+    background: var(--color-gray-50, #f9fafb);
+}
+
+.listYear {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-gray-400, #9ca3af);
+    min-width: 36px;
+}
+
+.listBadge {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--color-orange, #f97316);
+    background: #fff7ed;
+    padding: 2px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.listTitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-gray-900, #111827);
+}
+
+.listWho {
+    font-size: 13px;
+    color: var(--color-gray-600, #4b5563);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+}
+
+.listIcon {
+    color: var(--color-gray-400, #9ca3af);
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .listItem {
+        grid-template-columns: auto 1fr auto;
+        gap: 8px;
+        padding: 12px 16px;
+    }
+
+    .listWho {
+        display: none;
+    }
+}

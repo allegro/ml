@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState, useCallback } from "react";
 import Slider from "react-slick";
-import { ChevronLeft, ChevronRight, Play, ExternalLink } from "lucide-react";
+import { ChevronLeft, ChevronRight, Play, ExternalLink, ChevronDown } from "lucide-react";
 import styles from "./InsightsCarousel.module.css";
 
 export interface IInsight {
@@ -8,14 +8,17 @@ export interface IInsight {
     description: string;
     thumbnail: string;
     videoUrl: string;
+    who: string;
+    year: number;
 }
 
 export interface IResearchPaper {
     title: string;
-    description: string;
+    authors: string;
     url: string;
     venue: string;
-    thumbnail: string;
+    year: number;
+    thumbnail?: string;
 }
 
 interface InsightsCarouselProps {
@@ -31,6 +34,7 @@ const CAROUSEL_DEFAULT_SLIDES = 3;
 const CAROUSEL_SPEED = 500;
 const INSIGHTS_AUTOPLAY_SPEED = 5000;
 const PAPERS_AUTOPLAY_SPEED = 6000;
+const CAROUSEL_LIMIT = 5;
 
 function useSlidesToShow() {
     const getCount = useCallback(() => {
@@ -59,6 +63,11 @@ const InsightsCarousel: React.FunctionComponent<InsightsCarouselProps> = ({ insi
     const pubSliderRef = useRef<Slider>(null);
     const sectionRef = useRef<HTMLElement>(null);
     const slidesToShow = useSlidesToShow();
+    const [showAllTalks, setShowAllTalks] = useState(false);
+    const [showAllPapers, setShowAllPapers] = useState(false);
+
+    const carouselInsights = insights.slice(0, CAROUSEL_LIMIT);
+    const carouselPapers = papers.filter((p) => p.thumbnail).slice(0, CAROUSEL_LIMIT);
 
     useEffect(() => {
         const section = sectionRef.current;
@@ -118,9 +127,10 @@ const InsightsCarousel: React.FunctionComponent<InsightsCarouselProps> = ({ insi
                     </button>
 
                     <Slider key={`insights-${slidesToShow}`} ref={sliderRef} {...settings}>
-                        {insights.map((insight, index) => (
-                            <div key={index} className={styles.slideItem}>
+                        {carouselInsights.map((insight) => (
+                            <div key={insight.title} className={styles.slideItem}>
                                 <div className={styles.card}>
+                                    {insight.videoUrl ? (
                                     <a
                                         href={insight.videoUrl}
                                         target="_blank"
@@ -134,6 +144,11 @@ const InsightsCarousel: React.FunctionComponent<InsightsCarouselProps> = ({ insi
                                             </div>
                                         </div>
                                     </a>
+                                    ) : (
+                                    <div className={styles.videoThumb}>
+                                        <img src={insight.thumbnail} alt={insight.title} width={800} height={450} loading="lazy" style={{ objectFit: "cover" }} />
+                                    </div>
+                                    )}
                                     <div className={styles.cardContent}>
                                         <h3 className={styles.cardTitle}>{insight.title}</h3>
                                         <p className={styles.cardDesc}>{insight.description}</p>
@@ -143,6 +158,38 @@ const InsightsCarousel: React.FunctionComponent<InsightsCarouselProps> = ({ insi
                         ))}
                     </Slider>
                 </div>
+
+                {insights.length > CAROUSEL_LIMIT && (
+                    <div className={styles.seeAllWrap}>
+                        <button
+                            className={styles.seeAllBtn}
+                            onClick={() => setShowAllTalks(!showAllTalks)}
+                            aria-expanded={showAllTalks}
+                        >
+                            {showAllTalks ? "Show less" : `See all ${insights.length} talks`}
+                            <ChevronDown size={18} className={showAllTalks ? styles.chevronUp : ""} />
+                        </button>
+                    </div>
+                )}
+
+                {showAllTalks && (
+                    <div className={styles.fullList}>
+                        {insights.map((talk) => {
+                            const Tag = talk.videoUrl ? "a" : "div";
+                            const linkProps = talk.videoUrl
+                                ? { href: talk.videoUrl, target: "_blank", rel: "noopener noreferrer" }
+                                : {};
+                            return (
+                                <Tag key={talk.title} {...linkProps} className={styles.listItem}>
+                                    <span className={styles.listYear}>{talk.year}</span>
+                                    <span className={styles.listTitle}>{talk.title}</span>
+                                    <span className={styles.listWho}>{talk.who}</span>
+                                    {talk.videoUrl && <ExternalLink size={14} className={styles.listIcon} />}
+                                </Tag>
+                            );
+                        })}
+                    </div>
+                )}
             </div>
 
             {/* Research Papers */}
@@ -169,7 +216,7 @@ const InsightsCarousel: React.FunctionComponent<InsightsCarouselProps> = ({ insi
                     </button>
 
                     <Slider key={`pubs-${slidesToShow}`} ref={pubSliderRef} {...pubSettings}>
-                        {papers.map((pub, index) => (
+                        {carouselPapers.map((pub, index) => (
                             <div key={index} className={styles.slideItem}>
                                 <a
                                     href={pub.url}
@@ -184,7 +231,7 @@ const InsightsCarousel: React.FunctionComponent<InsightsCarouselProps> = ({ insi
                                     </div>
                                     <div className={styles.cardContent}>
                                         <h3 className={styles.pubTitle}>{pub.title}</h3>
-                                        <p className={styles.pubDesc}>{pub.description}</p>
+                                        <p className={styles.pubDesc}>{pub.authors}</p>
                                         <div className={styles.pubView}>
                                             <ExternalLink size={14} />
                                             <span>View</span>
@@ -195,6 +242,38 @@ const InsightsCarousel: React.FunctionComponent<InsightsCarouselProps> = ({ insi
                         ))}
                     </Slider>
                 </div>
+
+                {papers.length > CAROUSEL_LIMIT && (
+                    <div className={styles.seeAllWrap}>
+                        <button
+                            className={styles.seeAllBtn}
+                            onClick={() => setShowAllPapers(!showAllPapers)}
+                            aria-expanded={showAllPapers}
+                        >
+                            {showAllPapers ? "Show less" : `See all ${papers.length} papers`}
+                            <ChevronDown size={18} className={showAllPapers ? styles.chevronUp : ""} />
+                        </button>
+                    </div>
+                )}
+
+                {showAllPapers && (
+                    <div className={styles.fullList}>
+                        {papers.map((paper) => (
+                            <a
+                                key={paper.url}
+                                href={paper.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.listItem}
+                            >
+                                <span className={styles.listBadge}>{paper.venue}</span>
+                                <span className={styles.listTitle}>{paper.title}</span>
+                                <span className={styles.listWho}>{paper.authors}</span>
+                                <ExternalLink size={14} className={styles.listIcon} />
+                            </a>
+                        ))}
+                    </div>
+                )}
             </div>
         </section>
     );
