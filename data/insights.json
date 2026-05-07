@@ -41,12 +41,12 @@
             "year": 2024
         },
         {
-            "title": "Machine Translation at Allegro",
-            "description": "Use your model wise but data wiser — Warsaw.ai 2024",
+            "title": "Algorithmic Price Optimization with Machine Learning at Allegro",
+            "description": "Using machine learning models to define price subsidies — DSS ML Edition 2025",
             "thumbnail": "images/video-headers/miko-warsawai.webp",
-            "videoUrl": "",
-            "who": "Mikołaj Koszowski",
-            "year": 2024
+            "videoUrl": "/papers/DSSML25-Pricing.pdf",
+            "who": "Marcin Lebiedź & Jabir Kangarli",
+            "year": 2025
         },
         {
             "title": "Building a Vector Search Engine",
