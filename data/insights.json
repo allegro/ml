@@ -41,14 +41,6 @@
             "year": 2024
         },
         {
-            "title": "Algorithmic Price Optimization with Machine Learning at Allegro",
-            "description": "Using machine learning models to define price subsidies — DSS ML Edition 2025",
-            "thumbnail": "images/video-headers/miko-warsawai.webp",
-            "videoUrl": "/papers/DSSML25-Pricing.pdf",
-            "who": "Marcin Lebiedź & Jabir Kangarli",
-            "year": 2025
-        },
-        {
             "title": "Building a Vector Search Engine",
             "description": "MOPS Community",
             "thumbnail": "images/video-headers/maciej-mlops.webp",
