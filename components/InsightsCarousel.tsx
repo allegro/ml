@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState, useCallback } from "react";
 import Slider from "react-slick";
-import { ChevronLeft, ChevronRight, Play, ExternalLink, ChevronDown } from "lucide-react";
+import { ChevronLeft, ChevronRight, Play, FileText, ExternalLink, ChevronDown } from "lucide-react";
 import styles from "./InsightsCarousel.module.css";
 
 export interface IInsight {
@@ -34,7 +34,7 @@ const CAROUSEL_DEFAULT_SLIDES = 3;
 const CAROUSEL_SPEED = 500;
 const INSIGHTS_AUTOPLAY_SPEED = 5000;
 const PAPERS_AUTOPLAY_SPEED = 6000;
-const CAROUSEL_LIMIT = 5;
+const CAROUSEL_LIMIT = 7;
 
 function useSlidesToShow() {
     const getCount = useCallback(() => {
@@ -127,7 +127,9 @@ const InsightsCarousel: React.FunctionComponent<InsightsCarouselProps> = ({ insi
                     </button>
 
                     <Slider key={`insights-${slidesToShow}`} ref={sliderRef} {...settings}>
-                        {carouselInsights.map((insight) => (
+                        {carouselInsights.map((insight) => {
+                            const isPdf = insight.videoUrl.endsWith(".pdf");
+                            return (
                             <div key={insight.title} className={styles.slideItem}>
                                 <div className={styles.card}>
                                     {insight.videoUrl ? (
@@ -139,8 +141,12 @@ const InsightsCarousel: React.FunctionComponent<InsightsCarouselProps> = ({ insi
                                     >
                                         <img src={insight.thumbnail} alt={insight.title} width={800} height={450} loading="lazy" style={{ objectFit: "cover" }} />
                                         <div className={styles.playBtn}>
-                                            <div className={styles.playCircle}>
-                                                <Play color="#ffffff" size={28} fill="currentColor" className={styles.playIcon} />
+                                            <div className={isPdf ? styles.pdfCircle : styles.playCircle}>
+                                                {isPdf ? (
+                                                    <FileText color="#ffffff" size={28} className={styles.playIcon} />
+                                                ) : (
+                                                    <Play color="#ffffff" size={28} fill="currentColor" className={styles.playIcon} />
+                                                )}
                                             </div>
                                         </div>
                                     </a>
@@ -155,7 +161,8 @@ const InsightsCarousel: React.FunctionComponent<InsightsCarouselProps> = ({ insi
                                     </div>
                                 </div>
                             </div>
-                        ))}
+                            );
+                        })}
                     </Slider>
                 </div>
 

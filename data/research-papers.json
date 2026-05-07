@@ -32,23 +32,6 @@
             "thumbnail": "images/paper-thumbnails/retrysql.webp"
         },
         {
-            "title": "Algorithmic Price Optimization with Machine Learning at Allegro",
-            "authors": "Marcin Lebiedź, Jabir Kangarli",
-            "url": "/papers/DSSML25-Pricing.pdf",
-            "venue": "DSS ML Edition 2025",
-            "year": 2025,
-            "thumbnail": "images/paper-thumbnails/pricing.webp"
-        },
-        {
-            "title": "Decoding Passion: Discovering User Interest Profiles with Hybrid AI",
-            "authors": "Anna Mikołajczyk, Anna Pintara",
-            "url": "/papers/discovering_user_hobbies.pdf",
-            "venue": "2025",
-            "year": 2025,
-            "thumbnail": "images/paper-thumbnails/decoding-passion.webp",
-            "description": "This project outlines a hybrid AI pipeline developed to transform raw e-commerce product data into deep, structured user hobby/topics profiles. The methodology leverages LLMs to generate and assign hobby/topic tags to items, organizes these highly unstructured tags into a coherent hierarchy using clustering and sentence transformers, and finally profiles users based on their engagement history using Recency, Frequency, and Monetary (RFM) scoring."
-        },
-        {
             "title": "AlleNoise: Large-scale Text Classification Benchmark Dataset with Real-world Label Noise",
             "authors": "Alicja Rączkowska, Aleksandra Osowska-Kurczab, Jacek Szczerbiński, Kalina Jasinska-Kobus, Klaudia Nazarko",
             "url": "https://arxiv.org/abs/2407.10992",

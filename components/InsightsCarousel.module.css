@@ -163,6 +163,17 @@
     transition: background 0.2s;
 }
 
+.pdfCircle {
+    width: 68px;
+    height: 48px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
 .playIcon {
     margin-left: 2px;
     color: #ffffff;
@@ -170,6 +181,10 @@
 
 .videoThumb:hover .playCircle {
     background: #ff0000;
+}
+
+.videoThumb:hover .pdfCircle {
+    background: #ff6000;
 }
 
 .cardContent {

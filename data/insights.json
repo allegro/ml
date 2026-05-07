@@ -41,6 +41,22 @@
             "year": 2024
         },
         {
+            "title": "Algorithmic Price Optimization with Machine Learning at Allegro",
+            "description": "Using machine learning models to define price subsidies — DSS ML Edition 2025",
+            "thumbnail": "images/paper-thumbnails/pricing.webp",
+            "videoUrl": "/papers/DSSML25-Pricing.pdf",
+            "who": "Marcin Lebiedź & Jabir Kangarli",
+            "year": 2025
+        },
+        {
+            "title": "Decoding Passion: Discovering User Interest Profiles with Hybrid AI",
+            "description": "A hybrid AI pipeline transforming e-commerce product data into structured user hobby profiles",
+            "thumbnail": "images/paper-thumbnails/decoding-passion.webp",
+            "videoUrl": "/papers/discovering_user_hobbies.pdf",
+            "who": "Anna Mikołajczyk & Anna Pintara",
+            "year": 2025
+        },
+        {
             "title": "Building a Vector Search Engine",
             "description": "MOPS Community",
             "thumbnail": "images/video-headers/maciej-mlops.webp",
