@@ -34,6 +34,7 @@ const CAROUSEL_DEFAULT_SLIDES = 3;
 const CAROUSEL_SPEED = 500;
 const INSIGHTS_AUTOPLAY_SPEED = 5000;
 const PAPERS_AUTOPLAY_SPEED = 6000;
+const CAROUSEL_POOL = 10;
 const CAROUSEL_LIMIT = 7;
 function shuffle<T>(array: T[]): T[] {
     const shuffled = [...array];
@@ -77,8 +78,8 @@ const InsightsCarousel: React.FunctionComponent<InsightsCarouselProps> = ({ insi
     const [carouselPapers, setCarouselPapers] = useState(() => papers.filter((p) => p.thumbnail).slice(0, CAROUSEL_LIMIT));
 
     useEffect(() => {
-        setCarouselInsights(shuffle(insights).slice(0, CAROUSEL_LIMIT));
-        setCarouselPapers(shuffle(papers.filter((p) => p.thumbnail)).slice(0, CAROUSEL_LIMIT));
+        setCarouselInsights(shuffle(insights.slice(0, CAROUSEL_POOL)).slice(0, CAROUSEL_LIMIT));
+        setCarouselPapers(shuffle(papers.filter((p) => p.thumbnail).slice(0, CAROUSEL_POOL)).slice(0, CAROUSEL_LIMIT));
     }, [insights, papers]);
 
     useEffect(() => {
