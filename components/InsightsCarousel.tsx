@@ -35,7 +35,14 @@ const CAROUSEL_SPEED = 500;
 const INSIGHTS_AUTOPLAY_SPEED = 5000;
 const PAPERS_AUTOPLAY_SPEED = 6000;
 const CAROUSEL_LIMIT = 7;
-
+function shuffle<T>(array: T[]): T[] {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+}
 function useSlidesToShow() {
     const getCount = useCallback(() => {
         if (typeof window === "undefined") return 1;
@@ -66,8 +73,13 @@ const InsightsCarousel: React.FunctionComponent<InsightsCarouselProps> = ({ insi
     const [showAllTalks, setShowAllTalks] = useState(false);
     const [showAllPapers, setShowAllPapers] = useState(false);
 
-    const carouselInsights = insights.slice(0, CAROUSEL_LIMIT);
-    const carouselPapers = papers.filter((p) => p.thumbnail).slice(0, CAROUSEL_LIMIT);
+    const [carouselInsights, setCarouselInsights] = useState(() => insights.slice(0, CAROUSEL_LIMIT));
+    const [carouselPapers, setCarouselPapers] = useState(() => papers.filter((p) => p.thumbnail).slice(0, CAROUSEL_LIMIT));
+
+    useEffect(() => {
+        setCarouselInsights(shuffle(insights).slice(0, CAROUSEL_LIMIT));
+        setCarouselPapers(shuffle(papers.filter((p) => p.thumbnail)).slice(0, CAROUSEL_LIMIT));
+    }, [insights, papers]);
 
     useEffect(() => {
         const section = sectionRef.current;
