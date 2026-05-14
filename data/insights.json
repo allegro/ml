@@ -1,6 +1,14 @@
 {
     "insights": [
         {
+            "title": "Predicting the \"Buy It Again\" Moment: Engineering Recurring Purchases",
+            "description": "Using machine learning models to predict the time to next purchase and power targeted \"buy it again\" — Data Since Summit 2022",
+            "thumbnail": "images/paper-thumbnails/recurring-purchases.webp",
+            "videoUrl": "/papers/Recurring Purchases.pdf",
+            "who": "AI Hub - Shopper AI - HardROC Team",
+            "year": 2022
+        },
+        {
             "title": "Allegro: Pioneering the use of AI agents in marketing",
             "description": "Leveraging AI agents to automate and scale marketing operations for better performance.",
             "thumbnail": "https://img.youtube.com/vi/5fKggGVjhJQ/maxresdefault.jpg",
