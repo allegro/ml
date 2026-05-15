@@ -8,6 +8,14 @@
             "year": 2026
         },
         {
+            "title": "RetrySQL: Text-to-SQL Training with Retry Data for Self-correcting Query Generation",
+            "authors": "Alicja Rączkowska, Riccardo Belluzzo, Piotr Zieliński, Joanna Baran, Paweł Olszewski",
+            "url": "https://arxiv.org/abs/2507.02529",
+            "venue": "AAAI 2026",
+            "year": 2026,
+            "thumbnail": "images/paper-thumbnails/retrysql.webp"
+        },
+        {
             "title": "Suggest, Complement, Inspire: Story of Two Tower Recommendations at Allegro.com",
             "authors": "Aleksandra Osowska-Kurczab, Klaudia Nazarko, Mateusz Marzec, Lidia Wojciechowska, Eliška Kremeňová",
             "url": "https://arxiv.org/abs/2508.03702",
@@ -22,14 +30,6 @@
             "venue": "ACL 2025",
             "year": 2025,
             "thumbnail": "images/paper-thumbnails/conect.webp"
-        },
-        {
-            "title": "RetrySQL: Text-to-SQL Training with Retry Data for Self-correcting Query Generation",
-            "authors": "Alicja Rączkowska, Riccardo Belluzzo, Piotr Zieliński, Joanna Baran, Paweł Olszewski",
-            "url": "https://arxiv.org/abs/2507.02529",
-            "venue": "AAAI 2026",
-            "year": 2026,
-            "thumbnail": "images/paper-thumbnails/retrysql.webp"
         },
         {
             "title": "AlleNoise: Large-scale Text Classification Benchmark Dataset with Real-world Label Noise",

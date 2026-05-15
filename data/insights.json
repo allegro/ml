@@ -1,14 +1,6 @@
 {
     "insights": [
         {
-            "title": "Predicting the \"Buy It Again\" Moment: Engineering Recurring Purchases",
-            "description": "Using machine learning models to predict the time to next purchase and power targeted \"buy it again\" — Data Since Summit 2022",
-            "thumbnail": "images/paper-thumbnails/recurring-purchases.webp",
-            "videoUrl": "/papers/Recurring Purchases.pdf",
-            "who": "AI Hub - Shopper AI - HardROC Team",
-            "year": 2022
-        },
-        {
             "title": "Allegro: Pioneering the use of AI agents in marketing",
             "description": "Leveraging AI agents to automate and scale marketing operations for better performance.",
             "thumbnail": "https://img.youtube.com/vi/5fKggGVjhJQ/maxresdefault.jpg",
@@ -22,6 +14,22 @@
             "thumbnail": "images/video-headers/ola-women-in-tech-2025.webp",
             "videoUrl": "https://www.youtube.com/watch?v=2B4KAlhkT0s",
             "who": "Aleksandra Osowska-Kurczab",
+            "year": 2025
+        },
+        {
+            "title": "Algorithmic Price Optimization with Machine Learning at Allegro",
+            "description": "Using machine learning models to define price subsidies — DSS ML Edition 2025",
+            "thumbnail": "images/paper-thumbnails/pricing.webp",
+            "videoUrl": "/papers/DSSML25-Pricing.pdf",
+            "who": "Marcin Lebiedź & Jabir Kangarli",
+            "year": 2025
+        },
+        {
+            "title": "Decoding Passion: Discovering User Interest Profiles with Hybrid AI",
+            "description": "A hybrid AI pipeline transforming e-commerce product data into structured user hobby profiles",
+            "thumbnail": "images/paper-thumbnails/decoding-passion.webp",
+            "videoUrl": "/papers/discovering_user_hobbies.pdf",
+            "who": "Anna Mikołajczyk & Anna Pintara",
             "year": 2025
         },
         {
@@ -49,22 +57,6 @@
             "year": 2024
         },
         {
-            "title": "Algorithmic Price Optimization with Machine Learning at Allegro",
-            "description": "Using machine learning models to define price subsidies — DSS ML Edition 2025",
-            "thumbnail": "images/paper-thumbnails/pricing.webp",
-            "videoUrl": "/papers/DSSML25-Pricing.pdf",
-            "who": "Marcin Lebiedź & Jabir Kangarli",
-            "year": 2025
-        },
-        {
-            "title": "Decoding Passion: Discovering User Interest Profiles with Hybrid AI",
-            "description": "A hybrid AI pipeline transforming e-commerce product data into structured user hobby profiles",
-            "thumbnail": "images/paper-thumbnails/decoding-passion.webp",
-            "videoUrl": "/papers/discovering_user_hobbies.pdf",
-            "who": "Anna Mikołajczyk & Anna Pintara",
-            "year": 2025
-        },
-        {
             "title": "Building a Vector Search Engine",
             "description": "MOPS Community",
             "thumbnail": "images/video-headers/maciej-mlops.webp",
@@ -79,6 +71,14 @@
             "videoUrl": "https://www.youtube.com/watch?v=ESEeo_7ERRc",
             "who": "Szymon Jacoń",
             "year": 2023
+        },
+        {
+            "title": "Predicting the \"Buy It Again\" Moment: Engineering Recurring Purchases",
+            "description": "Using machine learning models to predict the time to next purchase and power targeted \"buy it again\" — Data Since Summit 2022",
+            "thumbnail": "images/paper-thumbnails/recurring-purchases.webp",
+            "videoUrl": "/papers/Recurring Purchases.pdf",
+            "who": "AI Hub - Shopper AI - HardROC Team",
+            "year": 2022
         },
         {
             "title": "The Structure of Customer Service Data @Allegro",
