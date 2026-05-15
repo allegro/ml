@@ -373,10 +373,6 @@
 .listWho {
     font-size: 13px;
     color: var(--color-gray-600, #4b5563);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 300px;
 }
 
 .listIcon {
