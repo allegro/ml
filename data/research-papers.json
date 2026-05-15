@@ -2,7 +2,7 @@
     "papers": [
         {
             "title": "Beyond Pointwise: Exploring Comparative Approaches for Predicting Query Performance Using LLMs",
-            "authors": "Claudia Golecki, Adam Racki, Jan Król, Piotr Zawistowski",
+            "authors": "Cezary Golecki, Adam Racki, Jan Król, Piotr Zawistowski",
             "url": "https://dl.acm.org/doi/10.1145/3793556",
             "venue": "ACM TOIS 2026",
             "year": 2026
