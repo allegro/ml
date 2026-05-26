@@ -68,27 +68,10 @@
 
 /* Grid */
 .grid {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 16px;
-}
-
-@media (min-width: 640px) {
-    .grid {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (min-width: 1024px) {
-    .grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (min-width: 1280px) {
-    .grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
+    justify-content: center;
 }
 
 /* Role card */
@@ -102,6 +85,8 @@
     padding: 20px;
     text-decoration: none;
     transition: all 0.2s;
+    width: 100%;
+    max-width: 320px;
 }
 
 .roleCard:hover {
