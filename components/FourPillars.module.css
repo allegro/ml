@@ -1,0 +1,216 @@
+.section {
+    padding: 48px 0;
+    background: var(--color-gray-50, #f9fafb);
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+@media (min-width: 640px) {
+    .container {
+        padding: 0 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 32px;
+    }
+}
+
+/* Intro box */
+.introBox {
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid var(--color-gray-200, #e5e7eb);
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 40px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 1024px) {
+    .introBox {
+        padding: 40px;
+    }
+}
+
+.introTitle {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-gray-900, #111827);
+    margin: 0 0 24px;
+}
+
+.introText {
+    font-size: 16px;
+    color: var(--color-gray-600, #4b5563);
+    line-height: 1.7;
+    margin: 0 0 20px;
+    text-align: left;
+}
+
+.introHighlight {
+    font-size: 18px;
+    color: var(--color-orange, #f97316);
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Pillar card */
+.pillarCard {
+    background: #ffffff;
+    border: 1px solid var(--color-gray-200, #e5e7eb);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.pillarCard:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-orange, #f97316);
+}
+
+.pillarHeader {
+    padding: 24px 24px 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.pillarIcon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #f97316, #ea580c);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 10px 15px -3px rgba(249, 115, 22, 0.3);
+}
+
+.pillarTitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-gray-900, #111827);
+    margin: 0;
+}
+
+.pillarDesc {
+    padding: 0 24px 16px;
+    margin: 0;
+    font-size: 15px;
+    color: var(--color-gray-600, #4b5563);
+    line-height: 1.6;
+}
+
+.toggleBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    color: var(--color-orange, #f97316);
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0 24px 16px;
+    margin-top: auto;
+    transition: color 0.2s;
+}
+
+.toggleBtn:hover {
+    color: var(--color-orange-dark, #ea580c);
+}
+
+.chevron {
+    transition: transform 0.3s;
+}
+
+.chevronExpanded {
+    transform: rotate(180deg);
+}
+
+/* Collapsible scope */
+.scopeWrapper {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.scopeWrapperExpanded {
+    max-height: 1000px;
+    opacity: 1;
+}
+
+.scopeInner {
+    padding: 0 24px 24px;
+}
+
+.scopeBox {
+    background: var(--color-gray-50, #f9fafb);
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid var(--color-gray-100, #f3f4f6);
+}
+
+.scopeLabel {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--color-gray-600, #4b5563);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 12px;
+}
+
+.scopeList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.scopeItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: var(--color-gray-700, #374151);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.scopeDot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-orange, #f97316);
+    flex-shrink: 0;
+    margin-top: 8px;
+}

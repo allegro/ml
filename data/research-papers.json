@@ -1,0 +1,100 @@
+{
+    "papers": [
+        {
+            "title": "Beyond Pointwise: Exploring Comparative Approaches for Predicting Query Performance Using LLMs",
+            "authors": "Cezary Golecki, Adrian Racki, Jan Król, Piotr Zawistowski",
+            "url": "https://dl.acm.org/doi/10.1145/3793556",
+            "venue": "ACM TOIS 2026",
+            "year": 2026
+        },
+        {
+            "title": "RetrySQL: Text-to-SQL Training with Retry Data for Self-correcting Query Generation",
+            "authors": "Alicja Rączkowska, Riccardo Belluzzo, Piotr Zieliński, Joanna Baran, Paweł Olszewski",
+            "url": "https://arxiv.org/abs/2507.02529",
+            "venue": "AAAI 2026",
+            "year": 2026,
+            "thumbnail": "images/paper-thumbnails/retrysql.webp"
+        },
+        {
+            "title": "Suggest, Complement, Inspire: Story of Two Tower Recommendations at Allegro.com",
+            "authors": "Aleksandra Osowska-Kurczab, Klaudia Nazarko, Mateusz Marzec, Lidia Wojciechowska, Eliška Kremeňová",
+            "url": "https://arxiv.org/abs/2508.03702",
+            "venue": "RecSys 2025",
+            "year": 2025,
+            "thumbnail": "images/paper-thumbnails/suggest.webp"
+        },
+        {
+            "title": "ConECT Dataset: Overcoming Data Scarcity in Context-Aware E-Commerce MT",
+            "authors": "Mikołaj Pokrywka, Wojciech Kusa, Mieszko Rutkowski, Mikołaj Koszowski",
+            "url": "https://aclanthology.org/2025.acl-short.7/",
+            "venue": "ACL 2025",
+            "year": 2025,
+            "thumbnail": "images/paper-thumbnails/conect.webp"
+        },
+        {
+            "title": "AlleNoise: Large-scale Text Classification Benchmark Dataset with Real-world Label Noise",
+            "authors": "Alicja Rączkowska, Aleksandra Osowska-Kurczab, Jacek Szczerbiński, Kalina Jasinska-Kobus, Klaudia Nazarko",
+            "url": "https://arxiv.org/abs/2407.10992",
+            "venue": "AISTATS 2025",
+            "year": 2025,
+            "thumbnail": "images/paper-thumbnails/allenoise.webp"
+        },
+        {
+            "title": "Improving Domain-Specific Retrieval by NLI Fine-Tuning",
+            "authors": "Roman Dusek, Aleksander Wawer, Christopher Galias, Lidia Wojciechowska",
+            "url": "https://annals-csis.org/Volume_35/drp/7569.html",
+            "venue": "FedCSIS 2023",
+            "year": 2023,
+            "thumbnail": "images/paper-thumbnails/retrieval.webp"
+        },
+        {
+            "title": "Going Beyond Research Datasets: Novel Intent Discovery in the Industry Setting",
+            "authors": "Aleksandra Chrabrowa, Tsimur Hadeliya, Dariusz Kajtoch, Robert Mroczkowski, Piotr Rybak",
+            "url": "https://aclanthology.org/2023.findings-eacl.68/",
+            "venue": "EACL 2023",
+            "year": 2023
+        },
+        {
+            "title": "Evaluation of Transfer Learning for Polish with a Text-to-Text Model",
+            "authors": "Aleksandra Chrabrowa, Łukasz Dragan, Karol Grzegorczyk, Dariusz Kajtoch, Mikołaj Koszowski, Robert Mroczkowski, Piotr Rybak",
+            "url": "https://aclanthology.org/2022.lrec-1.466/",
+            "venue": "LREC 2022",
+            "year": 2022
+        },
+        {
+            "title": "Allegro.eu Submission to WMT21 News Translation Task",
+            "authors": "Mikołaj Koszowski, Karol Grzegorczyk, Tsimur Hadeliya",
+            "url": "https://aclanthology.org/2021.wmt-1.10/",
+            "venue": "WMT 2021",
+            "year": 2021
+        },
+        {
+            "title": "HerBERT: Efficiently Pretrained Transformer-based Language Model for Polish",
+            "authors": "Robert Mroczkowski, Piotr Rybak, Alina Wróblewska, Ireneusz Gawlik",
+            "url": "https://aclanthology.org/2021.bsnlp-1.1/",
+            "venue": "BSNLP 2021",
+            "year": 2021
+        },
+        {
+            "title": "NeuralNDCG: Direct Optimisation of a Ranking Metric via Differentiable Relaxation of Sorting",
+            "authors": "Przemysław Pobrotyn, Radosław Białobrzeski",
+            "url": "https://arxiv.org/abs/2102.07831",
+            "venue": "arXiv 2021",
+            "year": 2021
+        },
+        {
+            "title": "Context-Aware Learning to Rank with Self-Attention",
+            "authors": "Przemysław Pobrotyn, Tomasz Bartczak, Mikołaj Synowiec, Radosław Białobrzeski, Jarosław Bojar",
+            "url": "https://arxiv.org/abs/2005.10084",
+            "venue": "SIGIR eCom 2020",
+            "year": 2020
+        },
+        {
+            "title": "KLEJ: Comprehensive Benchmark for Polish Language Understanding",
+            "authors": "Piotr Rybak, Robert Mroczkowski, Janusz Tracz, Ireneusz Gawlik",
+            "url": "https://aclanthology.org/2020.acl-main.111/",
+            "venue": "ACL 2020",
+            "year": 2020
+        }
+    ]
+}

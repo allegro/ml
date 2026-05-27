@@ -1,0 +1,212 @@
+{
+    "insights": [
+        {
+            "title": "Allegro: Pioneering the use of AI agents in marketing",
+            "description": "Leveraging AI agents to automate and scale marketing operations for better performance.",
+            "thumbnail": "https://img.youtube.com/vi/5fKggGVjhJQ/maxresdefault.jpg",
+            "videoUrl": "https://www.youtube.com/watch?v=5fKggGVjhJQ",
+            "who": "Allegro",
+            "year": 2025
+        },
+        {
+            "title": "Recommender Systems Unboxed",
+            "description": "The tech behind personalized experiences — Women in Tech Summit 2025",
+            "thumbnail": "images/video-headers/ola-women-in-tech-2025.webp",
+            "videoUrl": "https://www.youtube.com/watch?v=2B4KAlhkT0s",
+            "who": "Aleksandra Osowska-Kurczab",
+            "year": 2025
+        },
+        {
+            "title": "Algorithmic Price Optimization with Machine Learning at Allegro",
+            "description": "Using machine learning models to define price subsidies — DSS ML Edition 2025",
+            "thumbnail": "images/paper-thumbnails/pricing.webp",
+            "videoUrl": "/papers/DSSML25-Pricing.pdf",
+            "who": "Marcin Lebiedź & Jabir Kangarli",
+            "year": 2025
+        },
+        {
+            "title": "Decoding Passion: Discovering User Interest Profiles with Hybrid AI",
+            "description": "A hybrid AI pipeline transforming e-commerce product data into structured user hobby profiles",
+            "thumbnail": "images/paper-thumbnails/decoding-passion.webp",
+            "videoUrl": "/papers/discovering_user_hobbies.pdf",
+            "who": "Anna Mikołajczyk & Anna Pintara",
+            "year": 2025
+        },
+        {
+            "title": "AlleNoise: Enhancing Search with Synthetic Data",
+            "description": "Discover how we leverage synthetic data to improve search quality — ML in PL Conference 2024",
+            "thumbnail": "images/video-headers/ala-mlinpl-2024.webp",
+            "videoUrl": "https://www.youtube.com/watch?v=bZEeUeRTgz4",
+            "who": "Alicja Rączkowska",
+            "year": 2024
+        },
+        {
+            "title": "Understand, Translate, Respond",
+            "description": "Clever language modeling at Allegro — Data Science Summit 2024",
+            "thumbnail": "images/video-headers/ola-jacek-dssmle-2024.webp",
+            "videoUrl": "https://www.youtube.com/watch?v=YHLvMqi-wSo",
+            "who": "Aleksandra Osowska-Kurczab & Jacek Szczerbiński",
+            "year": 2024
+        },
+        {
+            "title": "Dense Retrieval for Allegro Search Engine",
+            "description": "Two-tower architecture details underpinning search — Warsaw.ai 2024",
+            "thumbnail": "images/video-headers/ola-warsawai2024.webp",
+            "videoUrl": "https://youtu.be/8CcRsX4IMnU?t=3403",
+            "who": "Aleksandra Chrabrowa",
+            "year": 2024
+        },
+        {
+            "title": "Building a Vector Search Engine",
+            "description": "MOPS Community",
+            "thumbnail": "images/video-headers/maciej-mlops.webp",
+            "videoUrl": "https://www.youtube.com/watch?v=a-B9Rcl6-3A",
+            "who": "Maciej Mościcki",
+            "year": 2023
+        },
+        {
+            "title": "Architecting ML for Huge Impact and Scale",
+            "description": "MOPS Community",
+            "thumbnail": "images/video-headers/szymon-mlops.webp",
+            "videoUrl": "https://www.youtube.com/watch?v=ESEeo_7ERRc",
+            "who": "Szymon Jacoń",
+            "year": 2023
+        },
+        {
+            "title": "Predicting the \"Buy It Again\" Moment: Engineering Recurring Purchases",
+            "description": "Using machine learning models to predict the time to next purchase and power targeted \"buy it again\" — Data Since Summit 2022",
+            "thumbnail": "images/paper-thumbnails/recurring-purchases.webp",
+            "videoUrl": "/papers/Recurring Purchases.pdf",
+            "who": "AI Hub - Shopper AI - HardROC Team",
+            "year": 2022
+        },
+        {
+            "title": "The Structure of Customer Service Data @Allegro",
+            "description": "GHOST Day: AMLC 2022",
+            "thumbnail": "images/video-headers/ola-ghost22.webp",
+            "videoUrl": "https://www.youtube.com/watch?v=jK-NX_qufjI",
+            "who": "Aleksandra Chrabrowa",
+            "year": 2022
+        },
+        {
+            "title": "Retrieval at Scale",
+            "description": "Sponsored talk at ML in PL Conference 2022",
+            "thumbnail": "images/video-headers/ola-jacek-mlinpl-2022.webp",
+            "videoUrl": "https://www.youtube.com/watch?v=fP0e3nuUyRY",
+            "who": "Aleksandra Osowska-Kurczab & Jacek Szczerbiński",
+            "year": 2022
+        },
+        {
+            "title": "Use Your Data Wisely – Data-Centric NLP in E-commerce",
+            "description": "Warsaw.ai 2022",
+            "thumbnail": "images/video-headers/pawel-warsawai.webp",
+            "videoUrl": "https://www.youtube.com/watch?v=zEgU0mIKiVA&t",
+            "who": "Paweł Olszewski",
+            "year": 2022
+        },
+        {
+            "title": "Evaluation of Transfer Learning for Polish with a Text-to-Text Model",
+            "description": "Paper presentation at LREC 2022",
+            "thumbnail": "images/video-headers/darek-lrec2022.webp",
+            "videoUrl": "https://s3.eu-west-2.wasabisys.com/lrec2022/sessions/575.mp4",
+            "who": "Dariusz Kajtoch",
+            "year": 2022
+        },
+        {
+            "title": "Introduction to Offline Reinforcement Learning",
+            "description": "Seminar at the University of Padua",
+            "thumbnail": "images/video-headers/riccardo-padua.webp",
+            "videoUrl": "https://www.youtube.com/watch?v=zF8TcTgcmRM",
+            "who": "Riccardo Belluzzo",
+            "year": 2022
+        },
+        {
+            "title": "plT5: Universal Model For Polish Language",
+            "description": "ML in PL 2021",
+            "thumbnail": "images/video-headers/darek-plt5.webp",
+            "videoUrl": "https://www.youtube.com/watch?v=BJYL7QZD6z4",
+            "who": "Dariusz Kajtoch",
+            "year": 2021
+        },
+        {
+            "title": "How to Translate Allegro into Foreign Languages",
+            "description": "ATM 2021 public track presentation",
+            "thumbnail": "images/video-headers/karol-atm.webp",
+            "videoUrl": "https://www.youtube.com/watch?v=6KDU5TZohpM",
+            "who": "Karol Grzegorczyk",
+            "year": 2021
+        },
+        {
+            "title": "\"Do you speak Allegro?\" Large Scale Language Modeling",
+            "description": "ATM 2021 public track presentation",
+            "thumbnail": "images/video-headers/riccardo-atm.webp",
+            "videoUrl": "https://www.youtube.com/watch?v=6T-R4kgIbBs",
+            "who": "Riccardo Belluzzo",
+            "year": 2021
+        },
+        {
+            "title": "Polacy nie gęsi, iż swojego BERTa mają",
+            "description": "Introduction to HerBERT — NLP Day 2020",
+            "thumbnail": "images/video-headers/polacy_nie_gesi.webp",
+            "videoUrl": "https://vimeo.com/471413175",
+            "who": "Piotr Rybak",
+            "year": 2020
+        },
+        {
+            "title": "Jak skutecznie zarządzać projektami uczenia maszynowego?",
+            "description": "GHOST Day presentation",
+            "thumbnail": "images/video-headers/irek_gawlik_mgmt.webp",
+            "videoUrl": "https://www.youtube.com/watch?v=gWDSdJfP7gU",
+            "who": "Ireneusz Gawlik",
+            "year": 2020
+        },
+        {
+            "title": "Discovering New Intents in Conversational Data",
+            "description": "GHOST Day presentation",
+            "thumbnail": "images/video-headers/p.rybak_intencje.webp",
+            "videoUrl": "https://www.youtube.com/watch?v=vSSZ3ANyVb0",
+            "who": "Piotr Rybak",
+            "year": 2020
+        },
+        {
+            "title": "Challenges of Commercializing Language Models on Mobile Devices",
+            "description": "GHOST Day presentation",
+            "thumbnail": "images/video-headers/sz.lecki_prod.webp",
+            "videoUrl": "https://www.youtube.com/watch?v=tC3yNlPg_Bw",
+            "who": "Szymon Łęski",
+            "year": 2020
+        },
+        {
+            "title": "Batch Construction Strategies in Deep Metric Learning",
+            "description": "GHOST Day presentation",
+            "thumbnail": "images/video-headers/kalina_batch_const.webp",
+            "videoUrl": "https://www.youtube.com/watch?v=wsBLHArYFtM",
+            "who": "Bartosz Ludwiczuk & Kalina Kobus",
+            "year": 2020
+        },
+        {
+            "title": "(Many Shades of) ML @ Allegro",
+            "description": "NLP, Vision & ranking at the largest Polish e-commerce — GHOST Day",
+            "thumbnail": "images/video-headers/przemoc_many_shades.webp",
+            "videoUrl": "https://www.youtube.com/watch?v=hXGSxTNVmwg",
+            "who": "Przemysław Pobrotyn",
+            "year": 2020
+        },
+        {
+            "title": "Machine Learning i przyszłość algorytmów",
+            "description": "Copernicus Festival",
+            "thumbnail": "images/video-headers/irek.gawlik_copernicus.webp",
+            "videoUrl": "https://www.youtube.com/watch?v=UT3bGUEY-8o",
+            "who": "Ireneusz Gawlik",
+            "year": 2020
+        },
+        {
+            "title": "Badania i rozwój ML w Allegro",
+            "description": "Allegro.tech podcast",
+            "thumbnail": "images/video-headers/irek.gawlik_podcast.webp",
+            "videoUrl": "https://allegro.tech/podcast/badania_i_rozwoj_ml_w_allegro/",
+            "who": "Ireneusz Gawlik",
+            "year": 2020
+        }
+    ]
+}

@@ -1,23 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Open+Sans:300,400,600,700&subset=latin,latin-ext&display=swap');
 @import 'metrum.css';
+
+:root {
+  --color-orange: #f97316;
+  --color-orange-dark: #ea580c;
+  --color-gray-900: #111827;
+  --color-gray-800: #1f2937;
+  --color-gray-700: #374151;
+  --color-gray-600: #4b5563;
+  --color-gray-400: #9ca3af;
+  --color-gray-200: #e5e7eb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-50: #f9fafb;
+  --m-color-link: #f97316;
+  --m-color-link-visited: #f97316;
+  --m-color-link-hover: #ea580c;
+}
 
 body {
   margin: 0;
-  padding: 81px 0 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #eceff1;
+  background: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
 }
 
-@media (min-width: 992px) {
-  body {
-    padding-top: 0;
-  }
-}
-
-:root {
-  --m-color-link: #3bbdc4;
-  --m-color-link-visited: #3bbdc4;
-  --m-color-link-hover: #3bbdc4;
+*, *::before, *::after {
+  box-sizing: border-box;
 }

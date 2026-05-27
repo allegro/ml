@@ -10,7 +10,7 @@ const OldBlogUrl = () => {
     )
 }
 
-OldBlogUrl.getInitialProps = async () => ({});
+export const getStaticProps = () => ({ props: {} });
 
 export default OldBlogUrl;
 

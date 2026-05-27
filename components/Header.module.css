@@ -1,49 +1,146 @@
-.hero {
-    background: url('../public/images/v01.png') no-repeat center center;
-    background-size: 2560px;
-    height: 600px;
-}
-
-.image {
-    height: 500px;
-}
-
-.navbar {
-    position: fixed;
-    left: 0;
+.header {
+    position: sticky;
     top: 0;
-    right: 0;
-    z-index: 9;
+    z-index: 50;
+    background: #ffffff;
+    border-bottom: 1px solid var(--color-gray-200, #e5e7eb);
 }
 
-.menu {
-    border-top: 1px solid #ddd;
-    position: absolute;
-    left: 0;
-    top: 81px;
-    height: calc(100vh - 81px);
-    right: 0;
-    bottom: 0;
-    background: #fff;
+.nav {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
 }
 
-.menu li {
-    border-bottom: 1px solid #ddd;
+.logoGroup {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
 }
 
-@media (min-width: 992px) {
-    .navbar {
-        position: sticky;
+.logoImg {
+    height: 32px;
+    width: auto;
+    position: relative;
+    top: 1px;
+}
+
+.logoText {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: var(--color-gray-900, #111827);
+}
+
+.desktopNav {
+    display: none;
+    align-items: center;
+    gap: 32px;
+}
+
+.navLink {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--color-gray-700, #374151);
+    cursor: pointer;
+    padding: 0;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.navLink:hover {
+    color: var(--color-orange, #f97316);
+}
+
+.joinBtn {
+    background: var(--color-orange, #f97316);
+    color: #ffffff;
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.joinBtn:hover {
+    background: var(--color-orange-dark, #ea580c);
+}
+
+.mobileMenuBtn {
+    display: block;
+    background: none;
+    border: none;
+    color: var(--color-gray-700, #374151);
+    cursor: pointer;
+    padding: 4px;
+}
+
+.mobileNav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 16px;
+    border-top: 1px solid var(--color-gray-200, #e5e7eb);
+}
+
+.mobileNavLink {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--color-gray-700, #374151);
+    cursor: pointer;
+    padding: 8px 0;
+    text-align: left;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.mobileNavLink:hover {
+    color: var(--color-orange, #f97316);
+}
+
+.mobileJoinBtn {
+    background: var(--color-orange, #f97316);
+    color: #ffffff;
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.2s;
+    margin-top: 8px;
+}
+
+.mobileJoinBtn:hover {
+    background: var(--color-orange-dark, #ea580c);
+}
+
+@media (min-width: 768px) {
+    .nav {
+        padding: 0 24px;
     }
 
-    .menu {
-        position: static;
-        height: auto;
-        background: transparent;
-        border: 0;
+    .desktopNav {
+        display: flex;
     }
 
-    .menu li {
-        border: 0;
+    .mobileMenuBtn {
+        display: none;
     }
 }

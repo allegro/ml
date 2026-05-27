@@ -1,0 +1,144 @@
+.section {
+    padding: 64px 0 40px;
+    background: linear-gradient(135deg, var(--color-gray-900, #111827), var(--color-gray-800, #1f2937), var(--color-gray-900, #111827));
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+@media (min-width: 640px) {
+    .container {
+        padding: 0 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 32px;
+    }
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 12px;
+}
+
+.subtitle {
+    color: var(--color-gray-400, #9ca3af);
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Legend */
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.legendBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Role type colors */
+.bgViolet { background: #ede9fe; color: #7c3aed; }
+.bgBlue { background: #dbeafe; color: #2563eb; }
+.bgEmerald { background: #d1fae5; color: #059669; }
+.bgOrange { background: #ffedd5; color: #ea580c; }
+.bgGray { background: #f3f4f6; color: #4b5563; }
+
+/* Grid */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+/* Role card */
+.roleCard {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    text-decoration: none;
+    transition: all 0.2s;
+    width: 100%;
+    max-width: 320px;
+}
+
+.roleCard:hover {
+    border-color: var(--color-orange, #f97316);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 15px -3px rgba(249, 115, 22, 0.1);
+}
+
+.roleCardTop {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.roleIconBox {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.externalIcon {
+    color: rgba(255, 255, 255, 0.2);
+    flex-shrink: 0;
+    margin-top: 4px;
+    transition: color 0.2s;
+}
+
+.roleCard:hover .externalIcon {
+    color: var(--color-orange, #f97316);
+}
+
+.roleTitle {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.roleType {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 4px 0 0;
+}
+
+.textViolet { color: #7c3aed; }
+.textBlue { color: #2563eb; }
+.textEmerald { color: #059669; }
+.textOrange { color: #ea580c; }
+.textGray { color: #4b5563; }
