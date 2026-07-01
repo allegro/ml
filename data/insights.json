@@ -1,6 +1,14 @@
 {
     "insights": [
         {
+            "title": "Deep Learning at Scale: Tailoring the Home Page for Millions",
+            "description": "Two-tower contrastive learning for real-time home page personalization — Data Science Summit AI Edition 2026",
+            "thumbnail": "images/paper-thumbnails/home-page-personalization.webp",
+            "videoUrl": "/papers/DSSML26-HomePagePersonalization.pdf",
+            "who": "Marcin Szpunar & Jakub Żmujdzin",
+            "year": 2026
+        },
+        {
             "title": "Allegro: Pioneering the use of AI agents in marketing",
             "description": "Leveraging AI agents to automate and scale marketing operations for better performance.",
             "thumbnail": "https://img.youtube.com/vi/5fKggGVjhJQ/maxresdefault.jpg",
