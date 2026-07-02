@@ -23,6 +23,8 @@ const roleTypeConfig: Record<RoleType, { icon: React.ElementType; bgClass: strin
 };
 
 const FinalCTA: React.FunctionComponent<FinalCTAProps> = ({ roles }) => {
+    if (roles.length === 0) return null;
+
     const roleTypes = Object.entries(roleTypeConfig) as [RoleType, typeof roleTypeConfig[RoleType]][];
 
     return (
