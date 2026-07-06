@@ -1,6 +1,30 @@
 {
     "insights": [
         {
+            "title": "How are DAGs made? A journey into modelling price elasticity",
+            "description": "Practical introduction to Directed Acyclic Graphs for causal modelling of price elasticity — Allegro Tech Talks #48 - Causal Inference AI Edition",
+            "thumbnail": "images/paper-thumbnails/how-are-dags-made.webp",
+            "videoUrl": "/papers/AllegroTalk26-HowAreDAGsMade.pptx",
+            "who": "Paweł Olszewski",
+            "year": 2026
+        },
+        {
+            "title": "Connecting the Dots: Navigating Credit Risk with Causal Discovery at Allegro Pay",
+            "description": "Applying causal discovery methods to credit risk modelling at Allegro Pay — Allegro Tech Talks #48 - Causal Inference AI Edition",
+            "thumbnail": "images/paper-thumbnails/credit-risk-causal-discovery.webp",
+            "videoUrl": "/papers/AllegroTalk26-CreditRiskCausalDiscovery.pptx",
+            "who": "Kamil Golis",
+            "year": 2026
+        },
+        {
+            "title": "Causal Inference: Ideas for the Age of Vibes",
+            "description": "Experiments, statistical significance, generalization and hidden confounding in modern causal inference — Allegro Tech Talks #48 - Causal Inference AI Edition",
+            "thumbnail": "images/paper-thumbnails/causal-inference-vibes.webp",
+            "videoUrl": "/papers/AllegroTalk26-CausalInferenceVibes.pdf",
+            "who": "Aleksander Molak",
+            "year": 2026
+        },
+        {
             "title": "Deep Learning at Scale: Tailoring the Home Page for Millions",
             "description": "Two-tower contrastive learning for real-time home page personalization — Data Science Summit AI Edition 2026",
             "thumbnail": "images/paper-thumbnails/home-page-personalization.webp",
