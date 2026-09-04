@@ -8,6 +8,7 @@ export interface IInsight {
     description: string;
     thumbnail: string;
     videoUrl: string;
+    recordingUrl?: string;
     who: string;
     year: number;
 }
@@ -141,39 +142,85 @@ const InsightsCarousel: React.FunctionComponent<InsightsCarouselProps> = ({ insi
 
                     <Slider key={`insights-${slidesToShow}`} ref={sliderRef} {...settings}>
                         {carouselInsights.map((insight) => {
-                            const isPdf = insight.videoUrl.endsWith(".pdf");
+                            const mediaUrl = insight.recordingUrl || insight.videoUrl;
+                            const isPdf = mediaUrl.endsWith(".pdf");
                             return (
-                            <div key={insight.title} className={styles.slideItem}>
-                                <div className={styles.card}>
-                                    {insight.videoUrl ? (
-                                    <a
-                                        href={insight.videoUrl}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className={styles.videoThumb}
-                                    >
-                                        <img src={insight.thumbnail} alt={insight.title} width={800} height={450} loading="lazy" style={{ objectFit: "cover" }} />
-                                        <div className={styles.playBtn}>
-                                            <div className={isPdf ? styles.pdfCircle : styles.playCircle}>
-                                                {isPdf ? (
-                                                    <FileText color="#ffffff" size={28} className={styles.playIcon} />
-                                                ) : (
-                                                    <Play color="#ffffff" size={28} fill="currentColor" className={styles.playIcon} />
-                                                )}
+                                <div key={insight.title} className={styles.slideItem}>
+                                    <div className={styles.card}>
+                                        {mediaUrl ? (
+                                            <a
+                                                href={mediaUrl}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className={styles.videoThumb}
+                                            >
+                                                <img
+                                                    src={insight.thumbnail}
+                                                    alt={insight.title}
+                                                    width={800}
+                                                    height={450}
+                                                    loading="lazy"
+                                                    style={{ objectFit: "cover" }}
+                                                />
+                                                <div className={styles.playBtn}>
+                                                    <div className={isPdf ? styles.pdfCircle : styles.playCircle}>
+                                                        {isPdf ? (
+                                                            <FileText
+                                                                color="#ffffff"
+                                                                size={28}
+                                                                className={styles.playIcon}
+                                                            />
+                                                        ) : (
+                                                            <Play
+                                                                color="#ffffff"
+                                                                size={28}
+                                                                fill="currentColor"
+                                                                className={styles.playIcon}
+                                                            />
+                                                        )}
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        ) : (
+                                            <div className={styles.videoThumb}>
+                                                <img
+                                                    src={insight.thumbnail}
+                                                    alt={insight.title}
+                                                    width={800}
+                                                    height={450}
+                                                    loading="lazy"
+                                                    style={{ objectFit: "cover" }}
+                                                />
                                             </div>
+                                        )}
+                                        <div className={styles.cardContent}>
+                                            <h3 className={styles.cardTitle}>{insight.title}</h3>
+                                            <p className={styles.cardDesc}>{insight.description}</p>
+                                            {insight.recordingUrl && (
+                                                <div className={styles.cardActions}>
+                                                    <a
+                                                        href={insight.recordingUrl}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className={styles.cardAction}
+                                                    >
+                                                        <Play size={14} fill="currentColor" />
+                                                        Watch recording
+                                                    </a>
+                                                    <a
+                                                        href={insight.videoUrl}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className={styles.cardAction}
+                                                    >
+                                                        <FileText size={14} />
+                                                        View slides
+                                                    </a>
+                                                </div>
+                                            )}
                                         </div>
-                                    </a>
-                                    ) : (
-                                    <div className={styles.videoThumb}>
-                                        <img src={insight.thumbnail} alt={insight.title} width={800} height={450} loading="lazy" style={{ objectFit: "cover" }} />
-                                    </div>
-                                    )}
-                                    <div className={styles.cardContent}>
-                                        <h3 className={styles.cardTitle}>{insight.title}</h3>
-                                        <p className={styles.cardDesc}>{insight.description}</p>
                                     </div>
                                 </div>
-                            </div>
                             );
                         })}
                     </Slider>
@@ -195,17 +242,46 @@ const InsightsCarousel: React.FunctionComponent<InsightsCarouselProps> = ({ insi
                 {showAllTalks && (
                     <div className={styles.fullList}>
                         {insights.map((talk) => {
-                            const Tag = talk.videoUrl ? "a" : "div";
-                            const linkProps = talk.videoUrl
-                                ? { href: talk.videoUrl, target: "_blank", rel: "noopener noreferrer" }
-                                : {};
+                            const mediaUrl = talk.recordingUrl || talk.videoUrl;
                             return (
-                                <Tag key={talk.title} {...linkProps} className={styles.listItem}>
+                                <div key={talk.title} className={styles.listItem}>
                                     <span className={styles.listYear}>{talk.year}</span>
-                                    <span className={styles.listTitle}>{talk.title}</span>
+                                    <a
+                                        href={mediaUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className={`${styles.listTitle} ${styles.listLink}`}
+                                    >
+                                        {talk.title}
+                                    </a>
                                     <span className={styles.listWho}>{talk.who}</span>
-                                    {talk.videoUrl && <ExternalLink size={14} className={styles.listIcon} />}
-                                </Tag>
+                                    <span className={styles.listActions}>
+                                        {talk.recordingUrl && (
+                                            <a
+                                                href={talk.recordingUrl}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className={styles.listAction}
+                                                aria-label={`Watch recording: ${talk.title}`}
+                                            >
+                                                <Play size={14} fill="currentColor" />
+                                            </a>
+                                        )}
+                                        {talk.videoUrl && talk.recordingUrl ? (
+                                            <a
+                                                href={talk.videoUrl}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className={styles.listAction}
+                                                aria-label={`View slides: ${talk.title}`}
+                                            >
+                                                <FileText size={14} />
+                                            </a>
+                                        ) : talk.videoUrl ? (
+                                            <ExternalLink size={14} className={styles.listIcon} />
+                                        ) : null}
+                                    </span>
+                                </div>
                             );
                         })}
                     </div>

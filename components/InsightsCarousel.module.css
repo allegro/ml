@@ -206,6 +206,27 @@
     line-height: 1.5;
 }
 
+.cardActions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.cardAction {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--color-orange, #f97316);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cardAction:hover {
+    color: #ea580c;
+}
+
 /* Publication card */
 .pubLink {
     display: block;
@@ -370,6 +391,14 @@
     color: var(--color-gray-900, #111827);
 }
 
+.listLink {
+    text-decoration: none;
+}
+
+.listLink:hover {
+    color: var(--color-orange, #f97316);
+}
+
 .listWho {
     font-size: 13px;
     color: var(--color-gray-600, #4b5563);
@@ -378,6 +407,22 @@
 .listIcon {
     color: var(--color-gray-400, #9ca3af);
     flex-shrink: 0;
+}
+
+.listActions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.listAction {
+    display: inline-flex;
+    color: var(--color-gray-400, #9ca3af);
+}
+
+.listAction:hover {
+    color: var(--color-orange, #f97316);
 }
 
 @media (max-width: 768px) {
