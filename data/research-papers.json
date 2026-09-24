@@ -1,8 +1,22 @@
 {
     "papers": [
         {
+            "title": "HybridQPP: Scaling Synthetic Evaluation Signals through Pointwise and Pairwise LLM Alignment",
+            "authors": "Cezary Golecki, Aleksander Wawer, Paweł Zawistowski",
+            "url": "https://github.com/XDeadlocked/SynthIR_Web/blob/main/papers/hybridqpp.pdf",
+            "venue": "SynthIR @ SIGIR 2026",
+            "year": 2026
+        },
+        {
+            "title": "Bottoms, Towers and Tops: Evaluating Component Interactions in Multi-Task Learning for E-Commerce",
+            "authors": "Piotr Bajger, Aleksander Wawer, Wojciech Kutak",
+            "url": "https://sigir-ecom.github.io/eCom26Papers/paper_798.pdf",
+            "venue": "SIGIR eCom'26",
+            "year": 2026
+        },
+        {
             "title": "Beyond Pointwise: Exploring Comparative Approaches for Predicting Query Performance Using LLMs",
-            "authors": "Cezary Golecki, Adrian Racki, Jan Król, Piotr Zawistowski",
+            "authors": "Cezary Golecki, Adrian Racki, Jakub Król, Paweł Zawistowski, Aleksander Wawer",
             "url": "https://dl.acm.org/doi/10.1145/3793556",
             "venue": "ACM TOIS 2026",
             "year": 2026
