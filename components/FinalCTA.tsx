@@ -2,7 +2,7 @@ import React from "react";
 import { FlaskConical, BrainCircuit, BarChart2, Code2, Sparkles, ExternalLink } from "lucide-react";
 import styles from "./FinalCTA.module.css";
 
-type RoleType = "Data Scientist" | "Research Engineer" | "Product Analyst" | "Engineer" | "Other";
+type RoleType = "Data Scientist" | "Research Engineer" | "Product Analyst" | "Product Manager" | "Engineer" | "Other";
 
 export interface IRole {
     title: string;
@@ -18,6 +18,7 @@ const roleTypeConfig: Record<RoleType, { icon: React.ElementType; bgClass: strin
     "Data Scientist":    { icon: FlaskConical,  bgClass: styles.bgViolet,  textClass: styles.textViolet },
     "Research Engineer": { icon: BrainCircuit,  bgClass: styles.bgBlue,    textClass: styles.textBlue },
     "Product Analyst":   { icon: BarChart2,     bgClass: styles.bgEmerald, textClass: styles.textEmerald },
+    "Product Manager":   { icon: BarChart2,     bgClass: styles.bgEmerald, textClass: styles.textEmerald },
     "Engineer":          { icon: Code2,         bgClass: styles.bgOrange,  textClass: styles.textOrange },
     "Other":             { icon: Sparkles,      bgClass: styles.bgGray,    textClass: styles.textGray },
 };
